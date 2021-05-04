@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.ico" type="image/icon type" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Doss - Build. Play. Repeat.</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; padding: 0 1rem">
+      <header>
+        <div
+          style="
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            src="./assets/logo.png"
+            style="height: 2rem; margin-right: 0.5rem"
+          />
+          <p style="font-weight: bold; font-style: italic">Doss.games</p>
+        </div>
+        <a
+          onclick="window.open(`https://www.notion.so/Job-Board-dbc91e4f99c4495c9518e022c4d5621a`, `_blank`).focus"
+          style="color: #ffcf00"
+          class="footer-link"
+          >We're Hiring!🎉</a
+        >
+      </header>
+    </div>
+    <div>
+      <div
+        style="
+          height: 7rem;
+          width: 7rem;
+          border-radius: 3.5rem;
+          background-color: #ffcf00;
+          position: absolute;
+          top: 5%;
+          right: 4%;
+        "
+        class="sideElement"
+      ></div>
+      <img
+        style="position: absolute; top: 0%; right: 3%; height: 12rem"
+        src="./assets/sticks.png"
+        class="sideElement"
+      />
+      <div
+        style="
+          height: 8rem;
+          width: 8rem;
+          border-radius: 4rem;
+          background-color: #f94e65;
+          position: absolute;
+          top: 95%;
+          left: 4%;
+        "
+        class="sideElement"
+      ></div>
+      <img
+        style="position: absolute; top: 90%; left: 5%; height: 12rem"
+        src="./assets/controller2.png"
+        class="sideElement"
+      />
+      <section style="background-color: #212121" class="vertical">
+        <div style="margin: 4rem 2rem 0 2rem">
+          <h1 style="text-align: center">
+            <span style="color: #564bff"> BUILD. </span>
+            <span style="color: #f94e65">PLAY. </span>
+            <span> REPEAT. </span>
+          </h1>
+          <h5
+            style="
+              color: #fefefe;
+              text-align: center;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 36px;
+            "
+          >
+            build your own games without coding, and play with your friends!
+          </h5>
+        </div>
+        <div id="mascot">
+          <div class="head"></div>
+          <div class="specbg"></div>
+          <div class="glass spec">
+            <object
+              type="image/svg+xml"
+              data="./assets/eyes.svg"
+              style="height: 50%; width: 25%"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="./assets/eyes.svg"
+              style="height: 50%; width: 25%"
+            ></object>
+          </div>
+        </div>
+        <form id="test-form">
+          <input
+            name="mobile"
+            placeholder="mobile"
+            maxlength="10"
+            class="mobile"
+            type="tel"
+          />
+          <button type="submit" id="submit-form">Join The Clan</button>
+        </form>
+      </section>
+      <section style="background-color: #564bff" class="horizontal">
+        <div class="subsection">
+          <h1>
+            No-code. <br />
+            all-play.
+          </h1>
+          <h6>Start dragging, dropping and build the best games.</h6>
+        </div>
+        <div class="subsection">
+          <div style="position: relative">
+            <div
+              style="
+                height: 10rem;
+                width: 10rem;
+                border-radius: 5rem;
+                background-color: #212121;
+                position: absolute;
+                top: -10%;
+                left: -20%;
+              "
+            ></div>
+            <div
+              style="
+                height: 5rem;
+                width: 5rem;
+                border-radius: 2.5rem;
+                background-color: #ffcf00;
+                position: absolute;
+                bottom: -5%;
+                right: 1%;
+              "
+            ></div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="glass bg"
+            >
+              <img style="height: 80%" src="./assets/controller.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #f94e65" class="horizontal">
+        <div class="subsection">
+          <h1>
+            play instantly. <br />
+            share instantly.
+          </h1>
+          <h6>One click publish. Play and share among your friends.</h6>
+        </div>
+        <div class="subsection">
+          <div style="position: relative">
+            <div
+              style="
+                height: 7rem;
+                width: 7rem;
+                border-radius: 3.5rem;
+                background-color: #212121;
+                position: absolute;
+                bottom: -10%;
+                right: 5%;
+              "
+            ></div>
+            <div
+              style="
+                height: 12rem;
+                width: 12rem;
+                border-radius: 6rem;
+                background-color: #ffcf00;
+                position: absolute;
+                top: 5%;
+                left: -10%;
+              "
+            ></div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="glass bg"
+            >
+              <img style="height: 80%" src="./assets/3dglasses.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #564bff" class="vertical">
+        <h1>the kingmakers.</h1>
+        <div class="clanCont">
+          <div class="glass clan"></div>
+          <div class="glass clan">
+            <h1 style="font-style: normal">🕹</h1>
+            <h6>Game Designer</h6>
+          </div>
+          <div class="glass clan">
+            <h1 style="font-style: normal">🚀</h1>
+            <h6>Game Engine Developer</h6>
+          </div>
+          <div class="glass clan">
+            <h1 style="font-style: normal">🎮</h1>
+            <h6>Product Designer</h6>
+          </div>
+          <div class="glass clan"></div>
+        </div>
+        <button
+          onclick="window.open(`https://www.notion.so/Job-Board-dbc91e4f99c4495c9518e022c4d5621a`, `_blank`).focus"
+        >
+          View All Careers
+        </button>
+      </section>
+      <section
+        style="
+          background-color: #212121;
+          min-height: 50vh;
+          align-items: flex-start;
+        "
+        class="horizontal"
+      >
+        <div class="footer">
+          <div
+            style="display: flex; align-items: center; flex-direction: column"
+          >
+            <img style="height: 100px" src="./assets/logo.png" />
+            <h2 class="footer-link">© doss.games</h2>
+            <p>All Rights Reserved</p>
+          </div>
+          <div>
+            <h6
+              class="footer-link"
+              onclick="window.open(`https://www.notion.so/Job-Board-dbc91e4f99c4495c9518e022c4d5621a`, `_blank`).focus"
+            >
+              🕹 Careers
+            </h6>
+
+            <h6
+              onclick="window.open(`https://www.notion.so/Mission-Vision-Values-c168973d2ea34aa49a29394ddb8c27d5`, `_blank`).focus"
+              class="footer-link"
+            >
+              🚀 Mission
+            </h6>
+            <h6 class="footer-link">👀 Privacy Policy</h6>
+          </div>
+          <div style="margin: 2rem">
+            <img
+              onclick="window.open(`https://www.instagram.com/doss.games/`, `_blank`).focus"
+              src="https://uploads-ssl.webflow.com/5f070a44bfec1a6dc8895bb1/60075a3f16a012a9100e6c14_Instagram%20Icon.png"
+              class="social-icon"
+            />
+            <img
+              onclick="window.open(`hhttps://discord.gg/uCFbBGYf8b`, `_blank`).focus"
+              src="https://uploads-ssl.webflow.com/5f070a44bfec1a6dc8895bb1/60075a6a5f5c522fe86eab8c_Discord%20Icon.png"
+              class="social-icon"
+            />
+
+            <img
+              onclick="window.open(`https://twitter.com/dossgame`, `_blank`).focus"
+              src="https://uploads-ssl.webflow.com/5f070a44bfec1a6dc8895bb1/60075a5a1199e93ae4498f59_Twitter%20Icon.png"
+              class="social-icon"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="jquery.serialize-object.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
