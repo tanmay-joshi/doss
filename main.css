@@ -296,4 +296,8 @@ input:focus {
   #test-form {
     flex-direction: column;
   }
+  .bg {
+    height: 400px;
+    width: 400px;
+  }
 }
