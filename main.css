@@ -108,6 +108,7 @@ h6 {
     rgba(255, 255, 255, 0.05) 100%
   );
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   /* Note: backdrop-filter has minimal browser support */
 }
 
