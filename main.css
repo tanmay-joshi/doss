@@ -173,6 +173,13 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 14rem;
+}
+
+.clan:hover {
+  padding: 2rem 4rem;
 }
 
 button {
