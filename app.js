@@ -40,6 +40,10 @@ $('#submit-form').on('click', function(e) {
   }
 })
 
+$('#discordbtn').on('click', function(e) {
+  e.preventDefault();
+})
+
 $('.mobile').keypress(function(e) {
     var arr = [];
     var kk = e.which;
