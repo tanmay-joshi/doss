@@ -5,19 +5,30 @@ var $form = $('form#test-form'),
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
+  var ref  = sessionStorage.getItem("referrer");
+  if(ref===null){ ref=""}
+
   console.log("oh", $('.mobile')[0].value.length)
   if ($('.mobile')[0].value.length == 10) {
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-    console.log("yay", document.getElementsByClassName("mobile")[0].style.display),
-    document.getElementsByClassName("mobile")[0].style.display = "none",
-    document.getElementById("submit-form").innerHTML = "Thanks!",
-  );
+
+    mixpanel.track("response_submitted", {
+      "mobile": $('.mobile')[0].value,
+      "referrer": ref
+    });
+    mixpanel.identify($('.mobile')[0].value);
+    mixpanel.people.set({ "referrer": ref });
+
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject()
+    }).success(
+      // do something
+      console.log("yay", document.getElementsByClassName("mobile")[0].style.display),
+      document.getElementsByClassName("mobile")[0].style.display = "none",
+      document.getElementById("submit-form").innerHTML = "Thanks!",
+    );
   } else {
     document.getElementById("submit-form").innerHTML = "Use your correct mobile 👀",
     setTimeout(() => {
@@ -39,8 +50,10 @@ $('.mobile').keypress(function(e) {
 
 function openModal() {
   document.getElementById("myModal").style.display = "flex";
+  mixpanel.track("join_the_waitlist_clicked");
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  mixpanel.track("modal_closed");
 }
