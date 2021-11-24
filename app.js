@@ -19,9 +19,9 @@ $('#submit-form').on('click', function(e) {
     document.getElementById("submit-form").innerHTML = "Thanks!",
   );
   } else {
-    document.getElementById("submit-form").innerHTML = "Goli beta masti nahi",
+    document.getElementById("submit-form").innerHTML = "Use your correct mobile 👀",
     setTimeout(() => {
-      document.getElementById("submit-form").innerHTML = "Join The Clan"
+      document.getElementById("submit-form").innerHTML = "Join The Waitlist"
     }, 2500);
   }
 })
@@ -36,3 +36,11 @@ $('.mobile').keypress(function(e) {
     if (!(arr.indexOf(kk)>=0))
         e.preventDefault();
 });
+
+function openModal() {
+  document.getElementById("myModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}

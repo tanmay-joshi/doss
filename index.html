@@ -9,6 +9,25 @@
     <title>Doss - Experience the metaverse.</title>
   </head>
   <body>
+    <div class="signupmodal" id="myModal" >
+      <div class="modalcontent" >
+        <div style="display: flex; justify-content: flex-end; width: 100%; " >
+          <p onClick="closeModal();" >X</p>
+        </div>
+        <div style="width: 50%; height: 30vh; background: url(./assets/modal-image.png) no-repeat center; background-size: contain; " ></div>
+        <h2>Launch your Metaverse!</h2>
+        <form id="test-form" style="display: flex; flex-direction: column;" >
+          <input
+            name="mobile"
+            placeholder="mobile"
+            maxlength="10"
+            class="mobile"
+            type="tel"
+          />
+          <button class="btn" type="submit" id="submit-form">Join The Waitlist</button>
+        </form>
+      </div>
+    </div>
     <div style="display: flex; justify-content: center; padding: 0 1rem">
       <header>
         <div
@@ -25,12 +44,39 @@
           />
           <p style="font-weight: bold; font-style: italic">Doss</p>
         </div>
-        <a
-          onclick="window.open(`https://www.notion.so/Job-Board-dbc91e4f99c4495c9518e022c4d5621a`, `_blank`).focus"
-          style="color: #ffcf00"
-          class="footer-link"
-          >We're Hiring!🎉</a
-        >
+        <div style="display: flex; align-items: center; font-size: 0.8rem;" >
+          <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           Whitepaper
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+            <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           $DOSS
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+            <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           Metaverses
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+          <a
+            onclick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
+            style="color: #ffcf00"
+            class="footer-link"
+            >
+            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
+            </a>
+        </div>
       </header>
     </div>
     <div> 
@@ -41,34 +87,37 @@
           </h1>
           <h4 style="color:#fefefe; margin:2rem 0; font-weight:500; " >Thrive your community on web 3.0</h4>
           <div>
-          <a class="btn">Join the Waitlist</a>
+          <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
+          
           </div>
         </div>
       </section>    
     </div>
     <section class="section2" >
       <div>
-        <div class="sectionImage"  style="background: url('./assets/dosstoken.png')" >
-        </div>
+        <div class="sectionImage"  style="background: url('./assets/dosstoken.png')" ></div>
         <div >
           <h1>Launch your own token</h1>
+          <span >Powered by &nbsp &nbsp <img src="./assets/solanalogo.svg" alt="Solana" height="12rem" width="auto" /></span>
           <h5>Mint and launch your own token! Grow with your true fans!</h5>
-          <a class="btn">Join the Waitlist</a>
+          <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
         </div>
       </div>
-      <div style="height: 2px; width: 4rem; background-color: #564bff; margin-bottom: 3rem;" ></div>
+      </section>
+      <section style=" display: flex; flex-direction: column; background-color: #111111; align-items: center; justify-content: center; margin-top: -2rem ; padding-bottom: 6rem;  min-height: auto;" >
+      <!-- <div style="height: 2px; width: 4rem; background-color: #564bff; margin-bottom: 3rem;" ></div> -->
       <div>
         <!-- <div style="height: 2px; width: 1rem; background-color: #564bff; margin: 1rem; " ></div> -->
-        <h2>Join the Next-gen creators!</h2>
+        <h2 style="color: #fefefe; text-align: center; " >Join the Next-gen creators!</h2>
         <!-- <div style="height: 2px; width: 1rem; background-color: #564bff; margin: 1rem; " ></div> -->
       </div>
-      <div style="justify-content: center; align-items: center; " >
+      <div style=" display: flex; justify-content: center; align-items: center; flex-wrap: wrap; " >
         <div class="tokencard" style="flex-direction: row;" >
           <span class="tokencardimg" style="background: url('https://readyplayer.me/_next/image?url=%2Fimages%2Fhome%2Fguy-02.png&w=1080&q=100') no-repeat; background-size: contain; " ></span>
           <div class="tokencardprice"  >
             <p>Aniket Mathur</p>
             <p style="font-size: 0.7rem;" >$ANIM</p>
-            <p style="color: #564bff;" >$12.9</p>
+            <p style="color: #564bff;" >$DOSS 12.9</p>
           </div>
         </div>
         <div class="tokencard" style="flex-direction: row;" >
@@ -76,7 +125,7 @@
           <div class="tokencardprice" >
             <p>Anushank Dagar</p>
             <p style="font-size: 0.7rem;" >$DAGS</p>
-            <p style="color: #564bff;" >$39.2</p>
+            <p style="color: #564bff;" >$DOSS 39.2</p>
           </div>
         </div>
         <div class="tokencard" style="flex-direction: row;" >
@@ -84,7 +133,7 @@
           <div class="tokencardprice" >
             <p>Tanmay Joshi</p>
             <p style="font-size: 0.7rem;" >$TANM</p>
-            <p style="color: #564bff;" >$2.5</p>
+            <p style="color: #564bff;" >$DOSS 2.5</p>
           </div>
         </div>
         <div class="tokencard" style="flex-direction: row;" >
@@ -92,7 +141,7 @@
           <div class="tokencardprice" >
             <p>Vishal Sharma</p>
             <p style="font-size: 0.7rem;" >$VISH</p>
-            <p style="color: #564bff;" >$19.2</p>
+            <p style="color: #564bff;" >$DOSS 19.2</p>
           </div>
         </div>
       </div>
@@ -105,9 +154,53 @@
         <div style="width: 50vw; display:flex; flex-direction: column; justify-content: center; align-items: center; margin: 4rem 2rem 0 2rem; background-color: #564BFF30; padding: 2rem; border-radius: 1rem; " >
           <h1 style="margin: 0.5rem; text-align: center; " >Create your own metaverse</h1>
           <h5 style="margin: 0.5rem;" >Build personalised games, host virtual events and more with the power of metaverse!</h5>
-          <a class="btn">Join the Waitlist</a>            
+          <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
         </div>
       </div>
+    </section>
+    <section style="background: #111111; min-height:40vh; display: flex; justify-content: center; align-items: stretch; color: #fefefe; "  >
+      <div style="width: 30%; margin: 1rem 4rem 0 0 ;" >
+        <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 1rem; " >
+          <div style="height: 15vh; width: 15vh; background: url('./assets/logo.png') no-repeat center; background-size: cover; " ></div>
+          <h2 style="color: #fefefe; font-style: italic; margin: 1rem; " >Doss</h2>
+        </div>
+        <p> Doss is a decentralised metaverse creator app on mobile. Creators can mint their own social tokens, build metaverses, conduct real time metaverse events, build and play personalised games, etc. </p>
+      </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; font-size: 0.8rem;" >
+          <h5 style="line-height: 0%; font-weight: bold; " >Resources</h5>
+          <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           Whitepaper
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+            <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           $DOSS
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+            <a
+            onclick=""
+            style="color: #fefefe"
+            class="footer-link"
+            >
+           Metaverses
+            </a>
+            &nbsp &nbsp &nbsp &nbsp
+          <a
+            onclick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
+            style="color: #ffcf00"
+            class="footer-link"
+            >
+            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
+            </a>
+        </div>
+      
     </section>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script
