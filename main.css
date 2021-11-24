@@ -388,22 +388,57 @@ section > div {
   color: #fefefe;
 }
 
+.footer2 {
+  background: #111111; 
+  min-height:40vh; 
+  display: flex; justify-content: space-around; align-items: stretch; color: #fefefe;
+}
+
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-width: 350px) and (max-width: 800px) {
-  .section2 {
-    height: auto;
+  header > div {
+    margin: auto 1rem;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+
+  .footer2 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-link {
+    display: block;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  #discordlink {
+    display: block;
   }
 
   .section2 > div {
+    display: flex;
     flex-direction: column;
-    height: auto;
   }
 
-  .sectionImage {
-    height: 40vh;
-    width: 40vh;
+  .sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: auto; */
   }
 
   .horizontal {
@@ -456,8 +491,11 @@ section > div {
     flex-direction: row;
   }
   .sectionImage {
-    width: 20vw;
-    height: 20vw;
+    width: 30vh;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 140% 140%  ;
+    background-position: center ;
   }
   #test-form {
     flex-direction: column;
