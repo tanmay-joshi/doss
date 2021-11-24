@@ -7,6 +7,10 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+#discordbtn {
+  display: none;
+}
+
 header {
   position: absolute;
   top: 0;

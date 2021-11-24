@@ -27,7 +27,10 @@ $('#submit-form').on('click', function(e) {
       // do something
       console.log("yay", document.getElementsByClassName("mobile")[0].style.display),
       document.getElementsByClassName("mobile")[0].style.display = "none",
-      document.getElementById("submit-form").innerHTML = "Thanks!",
+      document.getElementById("submit-form").style.display = "none",
+      document.getElementById("lym").innerHTML = "Join our discord server!",
+      document.getElementById("discordbtn").style.display = "block",
+      
     );
   } else {
     document.getElementById("submit-form").innerHTML = "Use your correct mobile 👀",
