@@ -5,7 +5,7 @@ var $form = $('form#test-form'),
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
-  var ref  = sessionStorage.getItem("referrer");
+  var ref  = sessionStorage.getItem("doss_utm_source");
   if(ref===null){ ref=""}
 
   console.log("oh", $('.mobile')[0].value.length)
