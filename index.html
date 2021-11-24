@@ -30,7 +30,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
         }
       }
         var param = sessionStorage.getItem("doss_utm_source");
-        if (param !== null) {
+        if (param === null) {
           param="";
         }
         mixpanel.track('user_landed', {
