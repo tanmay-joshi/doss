@@ -57,10 +57,18 @@ $('.mobile').keypress(function(e) {
 
 function openModal() {
   document.getElementById("myModal").style.display = "flex";
-  mixpanel.track("join_the_waitlist_clicked");
+  var ref  = sessionStorage.getItem("doss_utm_source");
+  if(ref===null){ ref=""}
+  mixpanel.track("join_the_waitlist_clicked", {
+    "referrer": ref
+  });
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-  mixpanel.track("modal_closed");
+  var ref  = sessionStorage.getItem("doss_utm_source");
+  if(ref===null){ ref=""}
+  mixpanel.track("modal_closed", {
+    "referrer": ref
+  });
 }
