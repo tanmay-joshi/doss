@@ -79,10 +79,10 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             src="./assets/logo.png"
             style="height: 2rem; margin-right: 0.5rem"
           />
-          <p style="font-weight: bold; font-style: italic">Doss</p>
+          <p style="font-weight: bold; font-style: italic; font-size: 2rem;">Doss</p>
         </div>
         <div style="display: flex; align-items: center; font-size: 0.8rem;" >
-          <a
+          <!-- <a
             onclick=""
             style="color: #fefefe;"
             class="header-link"
@@ -105,7 +105,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             >
            Metaverses
             </a>
-            &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp -->
           <a
             onclick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
             style="color: #ffcf00"
@@ -118,21 +118,60 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
       </header>
     </div>
     <div> 
-      <section style="background: linear-gradient(0deg, rgba(86,75,255, 0.2), rgba(86,75,255, 0.2)), url('./assets/landingpage.png'); background-size: cover; background-position: center;" class="vertical">
-        <div style="margin: 4rem 2rem 0 2rem; background-color: #564BFF20; padding: 4rem; border-radius: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-          <h1 style="text-align: center; color: #fefefe; margin: 0;">
-             Experience the metaverse 
+      <!-- <section style="background: linear-gradient(0deg, rgba(86,75,255, 0.2), rgba(86,75,255, 0.2)), url('./assets/landingpage.png'); background-size: cover; background-position: center;" class="vertical"> -->
+      <section  class="mainSection" >
+        <div class="mainSectionDiv" >
+        <div class="mainContent">
+          <h1 style=" color: #fefefe; margin: 0; font-size: 2.3rem; ">
+            Experience The <br/> Metaverse
           </h1>
-          <h4 style="color:#fefefe; margin:2rem 0; font-weight:500; " >Thrive your community on web 3.0</h4>
+          <h3 style="color:#efefef; margin:2rem 0; font-weight:500; font-size: 1rem; " >Build your metaverse and run your independent digital economy on mobile</h3>
           <div>
           <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
-          
           </div>
+        </div>
+        <div class="mainPic" >
+        </div>
         </div>
       </section>    
     </div>
+    <section style="display: flex; align-items: center; justify-content: center; background-color: #02020B; flex-direction: column; "  >
+      <div class="ethgif" ></div>
+      <div class="whyMetaverse">
+      <h1 style="text-align: center;" > The world is moving towards immersive experience</h1>
+      <h2> why not creators? </h2>
+      <div class="whyCardCont" >
+        <div class="whyCard" style="border: 0.1rem solid #8e94f2; color: #8e94f2;" >
+          <!-- <h5 class="whyCardNum" >1</h5>  -->
+            <div class="whyCardGif"  >
+              <iframe src="https://giphy.com/embed/m0afn6n0RCEvxGLLVe" width="100%" height="100%" frameBorder="0"  class="giphy-embed" allowFullScreen></iframe></div>
+          <h2>Build</h2>
+          <p>
+            Create your metaverse with our no-code AI-assisted mobile editor
+          </p>
+        </div>
+        <div class="whyCard" style="border: 0.1rem solid #ff7b00; color: #ff7b00;" >
+          <!-- <h5 class="whyCardNum" >2</h5>  -->
+          <div class="whyCardGif">
+            <iframe src="https://giphy.com/embed/Sv4E4CKNcxiwMfn2hn" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+          <h2>Engage</h2>
+          <p>
+            Host virtual events, hangout sessions, personalised games & much more
+          </p>
+        </div>
+        <div class="whyCard" style="border: 0.1rem solid #ffd100; color: #ffd100; " >
+          <!-- <h5 class="whyCardNum" >3</h5>  -->
+          <div class="whyCardGif"><iframe src="https://giphy.com/embed/VwOnBRoXkqMsiB3rki" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+          <h2>Earn</h2>
+          <p>
+            Launch your social token and get funded by your fans
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
     <section class="section2" >
-      <div>
+      <div class="section2Div" >
         <div class="sectionImage"  style="background-image: url('./assets/dosstoken.png')" ></div>
         <div class="sectionContent" >
           <h1>Launch your own token</h1>
@@ -140,58 +179,104 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
           <h5>Mint and launch your own token! Grow with your true fans!</h5>
           <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
         </div>
+        </div>
+
+        <div class="tokenBenefits" style="margin-top: 2rem;" >
+          <div class="tokenCard" style="border-color:#c0fdff;" >
+            <h2>Govern Doss</h2>
+            <p>
+              Decide the roadmap for the Doss Community.
+            </p>
+          </div>
+          <div class="tokenCard" style="border-color: #f72585;" >
+            <h2>Grow with your the community</h2>
+            <p>
+              Let your fans decide and grow with them
+            </p>
+          </div>
+        </div>
+        <div class="tokenBenefits">
+          <div class="tokenCard"   >
+            <h2>Tipping Pool</h2>
+            <p>
+              Get tipped by your fans and community to grow
+            </p>
+          </div>
+          <div class="tokenCard" style="border-color: #ffd6e0;" >
+            <h2>NFTise the Interaction</h2>
+            <p>
+              Create NFTs whenever you meet your creators
+            </p>
+          </div>
       </div>
       </section>
-      <section style=" display: flex; flex-direction: column; background-color: #111111; align-items: center; justify-content: center; margin-top: -2rem ; padding-bottom: 6rem;  min-height: auto;" >
-      <!-- <div style="height: 2px; width: 4rem; background-color: #564bff; margin-bottom: 3rem;" ></div> -->
+      
+    <section style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #02020B; color: #fefefe; " >
+      <div class="meta" >
       <div>
-        <!-- <div style="height: 2px; width: 1rem; background-color: #564bff; margin: 1rem; " ></div> -->
-        <h2 style="color: #fefefe; text-align: center; " >Join the Next-gen creators!</h2>
-        <!-- <div style="height: 2px; width: 1rem; background-color: #564bff; margin: 1rem; " ></div> -->
+        <h1>Join the metaverse revolution</h1>
+        <h3>Build and earn.</h3>
       </div>
-      <div style=" display: flex; justify-content: center; align-items: center; flex-wrap: wrap; " >
-        <div class="tokencard" style="flex-direction: row;" >
-          <span class="tokencardimg" style="background: url('https://readyplayer.me/_next/image?url=%2Fimages%2Fhome%2Fguy-02.png&w=1080&q=100') no-repeat; background-size: contain; " ></span>
-          <div class="tokencardprice"  >
-            <p>Aniket Mathur</p>
-            <p style="font-size: 0.7rem;" >$ANIM</p>
-            <p style="color: #564bff;" >$DOSS 12.9</p>
-          </div>
+      <div class="metaBaseCont" >
+        <div class="metaBase" style="border-color: #83c5be ;" >
+          <div class="whyCardGif"><iframe src="https://giphy.com/embed/5eLDrEaRGHegx2FeF2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+          <h6 class="metaCreators" style="color: #83c5be;" >Developers</h6>
+          <p>Develop smart assets, game mechanics, smart contracts and Dapps for the metaverse ecosystem </p>
         </div>
-        <div class="tokencard" style="flex-direction: row;" >
-          <span class="tokencardimg" style="background: url('https://readyplayer.me/_next/image?url=%2Fimages%2Fhome%2Ffooter-guy.png&w=3840&q=50') no-repeat; background-size: contain; " ></span>
-          <div class="tokencardprice" >
-            <p>Anushank Dagar</p>
-            <p style="font-size: 0.7rem;" >$DAGS</p>
-            <p style="color: #564bff;" >$DOSS 39.2</p>
-          </div>
+        <div class="metaBase" style="border-color: #ffc8dd;" >
+          <div class="whyCardGif"><iframe src="https://giphy.com/embed/4XXo8A7CIW1lZGgdhm" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+          <h6 class="metaCreators" style="color: #ffc8dd;" >Designers</h6>
+          <p>Design voxel art, assets, own and rent out your assets and designs  </p>
         </div>
-        <div class="tokencard" style="flex-direction: row;" >
-          <span class="tokencardimg" style="background: url('https://readyplayer.me/_next/image?url=%2Fimages%2Fhome%2Fgirl.png&w=1200&q=100') no-repeat; background-size: contain; " ></span>
-          <div class="tokencardprice" >
-            <p>Tanmay Joshi</p>
-            <p style="font-size: 0.7rem;" >$TANM</p>
-            <p style="color: #564bff;" >$DOSS 2.5</p>
-          </div>
+      </div>
+      <div>
+      </div>
+      <div style="display: flex; width: 100%; justify-content: center; " >
+        <div class="metaPrimary" style="border-color: #ffcf00;" >
+          <h6 class="metaCreators" style="color: #ffcf00;" >Creators</h6>
+          <!-- <div style="width: 100%; height: 20rem; background: url('./assets/concert.png') center no-repeat ; background-size: contain; " ></div> -->
+          <div class="metaCreatorImg" ></div>
+          <p> Build your virtual space and interact with your fans </p>
         </div>
-        <div class="tokencard" style="flex-direction: row;" >
-          <span class="tokencardimg" style="background: url('https://readyplayer.me/_next/image?url=%2Fimages%2Fhome%2Fguy-01.png&w=828&q=100') no-repeat; background-size: contain; " ></span>
-          <div class="tokencardprice" >
-            <p>Vishal Sharma</p>
-            <p style="font-size: 0.7rem;" >$VISH</p>
-            <p style="color: #564bff;" >$DOSS 19.2</p>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
+    <!-- <section>
+      <div>
+        <h2>Roadmap</h2>
+        <div>
+          <h4>Feature</h4>
+          
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section style="background-color: #111111; color: #fefefe; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; " >
+      <div class="economy" >
+        <div>
+          <h1>$DOSS Economy</h1>
+          <h6> We  </h6>
+        </div>
+        <div>
+          <h3>Govern Doss platform</h3>
+        </div>
+        <div>
+          <h3>You grow, we grow</h3>
+        </div>
+        <div>
+          <h3>1,000 True fans > 1M Subscribers</h3>
+        </div>
+      </div>
+    </section> -->
+
     <section class="section2" style="background: url('./assets/metaverse.png') no-repeat center; background-size: cover; min-height: 70vh; "  >
       <div style="height: 100%;" >
       <!--
         <div class="sectionImage" style="background: url('./assets/metaverse.png') no-repeat; background-size: contain;" >
         </div> -->
-        <div style="width: 50vw; display:flex; flex-direction: column; justify-content: center; align-items: center; margin: 4rem 2rem 0 2rem; background-color: #564BFF30; padding: 2rem; border-radius: 1rem; " >
-          <h1 style="margin: 0.5rem; text-align: center; " >Create your own metaverse</h1>
-          <h5 style="margin: 0.5rem;" >Build personalised games, host virtual events and more with the power of metaverse!</h5>
+        <div style="width: 50vw; display:flex; flex-direction: column; justify-content: center; align-items: center; margin: 4rem 2rem 0 2rem; background-color: #02020B; padding: 2rem; border-radius: 1rem; " >
+          <h1 style="margin: 0.5rem; text-align: center; " >Ready to take your community to web 3.0?</h1>
+          <!-- <h5 style="margin: 0.5rem;" >Build personalised games, host virtual events and more with the power of metaverse!</h5> -->
           <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
         </div>
       </div>
@@ -238,8 +323,8 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
             </a>
         </div>
-      
     </section>
+    
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script
       type="text/javascript"

@@ -21,6 +21,7 @@ header {
   max-width: 960px;
   margin: 0 auto;
   color: #fefefe;
+  /* padding: 0rem 0 1rem 0; */
 }
 
 section {
@@ -62,6 +63,211 @@ h6 {
   /* text-transform: lowercase; */
   margin: 0 auto;
   color: #212121;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #02020B;
+}
+
+.mainSectionDiv {
+  display: flex; justify-content: center; align-items: center; 
+  max-width: 90%;
+}
+
+.mainSection > div {
+  flex:1;
+}
+
+.mainContent {
+  flex: 35; margin: 4rem 2rem 0 2rem; border: 0.1rem solid #564BFF; padding: 3rem; border-radius: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; 
+}
+
+.mainPic {
+  height: 40rem;
+  width: 100%;
+  background:  url('./assets/coin-backed-metaverse.png') no-repeat; 
+  background-size: cover; 
+  background-position: center;
+  flex: 65;
+}
+
+.whyMetaverse {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-items: center;  
+  color: #fefefe;
+}
+
+.ethgif {
+  /* height: 4rem; width: 0.1rem; background-color: #ffcf00; */
+  content: "";
+    /* position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0; */
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-image: url("https://www.cryptokitties.co/images/ether-diamond.gif");
+}
+
+.whyCardCont {
+  display: flex; align-items: stretch; justify-content: space-around;
+}
+
+.whyCardCont > * {
+  flex: 1;
+}
+
+.whyCard {
+  padding: 2rem;
+  margin: 1rem;
+  /* border: 0.1rem #fefefe solid; */
+  border-radius: 0.5rem;
+  position: relative;
+  /* box-shadow: -11px 12px 0px -1px;
+-webkit-box-shadow: -11px 12px 0px -1px;
+-moz-box-shadow: -11px 12px 0px -1px; */
+
+}
+
+.whyCard > p {
+  color: #adadad;
+  mix-blend-mode:screen;  
+  
+}
+
+.whyCard > h2 {
+  color: #fefefe;
+  mix-blend-mode: screen;
+  
+}
+
+.whyCardNum {
+  /* margin-top: -20%; */
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #fefefe;
+  /* border-radius: 0.1rem; */
+  padding: 1rem; 
+  color: #111111;
+  position: absolute;
+  top: -4rem;
+  /* width: 1.5rem; */
+  /* height: 1.5rem; */
+
+
+}
+
+.whyCardGif {
+  height:0;padding-bottom:50%;position:relative;
+}
+
+.whyCardGif > iframe {
+  position:absolute;
+}
+
+.tokenBenefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  /* margin-top: 2rem; */
+
+}
+
+.tokenCard {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid #564bff;
+  flex: 1;
+  margin: 2rem;
+}
+
+.meta {
+  /* color: #212121; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta > h5 {
+  color: #212121;
+}
+.metaBaseCont {
+  display: flex; width: 100%; justify-content: center;
+  max-width: 1200px;
+}
+
+.metaBase {
+  padding: 1rem 2rem;
+  border: 0.1rem #212121 solid;
+  margin: 2rem;
+  flex:1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.metaBase > p {
+  color: #adadad;
+  text-align: center;
+}
+
+.metaPrimary {
+  border: 0.1rem #212121 solid;
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5rem;
+  /* background: url("./assets/concert.png") no-repeat center; */
+  background-size: contain;
+  /* height: 40rem; */
+}
+
+.metaCreators {
+  background-color: #02020B;
+  padding: 1rem 3rem;
+  color: #564bff;
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1rem;
+  top:-1.5rem;
+}
+
+.metaCreatorImg {
+  background: url('./assets/concert.png') no-repeat center; 
+  background-size: cover; 
+  height: 40rem; 
+  width: 100%; 
+}
+
+.economy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+
 }
 
 .vertical {
@@ -279,14 +485,14 @@ input, input:focus, input:active {
 
 
 .section2 {
-  background-color: #111111;
+  background-color: #02020B;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fefefe;
 }
-.section2 > div {
+.section2Div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -378,7 +584,7 @@ section > div {
 }
 
 .modalcontent {
-  background-color: #111111;
+  background-color: #02020B;
   margin:  auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #fefefe;
@@ -509,6 +715,50 @@ section > div {
     height: 16rem;
     width: 16rem;
   }
+  
+  .mainSectionDiv {
+    flex-direction: column-reverse;
+  }
+  .mainPic {
+    flex: auto;
+    height: 50vh  ;
+    
+  }
+
+  .mainContent {
+    align-items: center;
+  }
+  
+  .mainContent > h3 {
+    text-align: center;
+  }
+
+  .whyCardCont {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .whyCard {
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .whyCard > p {
+    text-align: center;
+
+  }
+  .whyCard > h2 {
+    text-align: center;
+  }
+
+  .metaBaseCont {
+    flex-direction: column;
+  }
+
+  .metaCreatorImg {
+    height: 20rem;
+  }
+
 }
 
 @media only screen and (max-width: 350px) {
