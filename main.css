@@ -755,6 +755,7 @@ section > div {
     flex: auto;
     height: 40vh  ;
     background-size: contain;
+    background-position: center bottom;
     
   }
 
@@ -840,6 +841,7 @@ section > div {
     flex: auto;
     height: 40vh  ;
     background-size: contain;
+    background-position: center bottom;
     
   }
 
