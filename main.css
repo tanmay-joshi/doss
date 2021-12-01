@@ -800,6 +800,9 @@ section > div {
   .leadFooter > h1 {
     font-size: 2rem;
   }
+  .metaPrimary > p {
+    text-align: center;
+  }
 
 }
 
