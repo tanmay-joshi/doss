@@ -193,6 +193,10 @@ h6 {
   margin: 2rem;
 }
 
+.tokenCard > p {
+  color: #ededed;
+}
+
 .meta {
   /* color: #212121; */
   display: flex;
@@ -224,7 +228,7 @@ h6 {
 }
 
 .metaBase > p {
-  color: #adadad;
+  color: #ededed;
   text-align: center;
 }
 
@@ -268,6 +272,10 @@ h6 {
   align-items: center;
   max-width: 1200px;
 
+}
+
+.whyCardGifComm {
+  width: 50%; height:50%;padding-bottom:50%;position:relative;
 }
 
 .vertical {
@@ -408,8 +416,8 @@ h6 {
 
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
   line-height: 30px;
   /* identical to box height */
 
@@ -418,11 +426,10 @@ h6 {
   text-align: center;
   /* text-transform: lowercase; */
 
-  color: #212121;
-  cursor: pointer;
+  background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 
 }
 
@@ -491,6 +498,7 @@ input, input:focus, input:active {
   justify-content: center;
   align-items: center;
   color: #fefefe;
+  padding: 5rem 0;
 }
 .section2Div {
   display: flex;
