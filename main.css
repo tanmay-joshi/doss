@@ -68,8 +68,8 @@ h6 {
 
 .mainSection {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-image: url('./assets/bg_primary.png');
   background-size: cover;
@@ -90,14 +90,21 @@ h6 {
 .mainContent {
   flex: 35; 
   margin: 4rem 2rem 0 2rem; 
-  border: 0.1rem dashed #564bff; 
-  outline: 0.2rem solid #F2C94C;
+  /* outline: 0.1rem dashed #564bff;  */
+  /* border: 0.2rem solid #F2C94C; */
   padding: 3rem; 
   border-radius: 0.6rem;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
+
+  background: rgba( 242, 201, 76, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 242, 201, 76, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .btn {
