@@ -71,7 +71,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('./assets/bg_primary.png');
+  background-image: url('./assets/bg_primary2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -99,12 +99,12 @@ h6 {
   justify-content: center; 
   align-items: center; 
 
-  background: rgba( 242, 201, 76, 0.05 );
-box-shadow: 0 8px 32px 0 rgba( 242, 201, 76, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: #F44B720d;
+  box-shadow: 0 8px 32px 0 #F44B725e;
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
 }
 
 .btn {
@@ -115,7 +115,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   /* align-items: center; */
   padding: 8px 32px;
 
-  background: #fff;
   border-radius: 0.2rem;
   border: none;
 
@@ -131,10 +130,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: center;
   /* text-transform: lowercase; */
 
-  background: #F7971E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /* background: #F7971E;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #FFD200, #F7971E); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  background: #ffffff2e ;
+  border: 1px solid #ffffff2e;
+/* background: linear-gradient(90deg, rgba(244,75,114,1) 0%, rgba(47,136,255,1) 100%); */
 
 }
 
