@@ -67,7 +67,9 @@ function openModal() {
       type: "subscribe",
       eventName: "success",
       data: {
-        key: "bollywood me bhasad tere bhai ne machai, sentalis ne bhi dilli sambhal rakhi hai",
+        authKey: "yes yes yes",
+        refKey: "no non no",
+        isWallet: "true",
       },
     }),
     "*"
