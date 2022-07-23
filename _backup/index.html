@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.ico" type="image/icon type" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Doss - Build blockchain games</title>
+  </head>
+  <script>
+    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+
+    // Enabling the debug mode flag is useful during implementation,
+    // but it's recommended you remove it for production
+    mixpanel.init('5355e33f334fc2a7369949393e489e5e'); // Replace YOUR_TOKEN with your token from mixpanel.com
+    var queryForm = function(settings){
+      var reset = settings && settings.reset ? settings.reset : false;
+      var self = window.location.toString();
+      var querystring = self.split("?");
+      if (querystring.length > 1) {
+        var pairs = querystring[1].split("&");
+        for (i in pairs) {
+          var keyval = pairs[i].split("=");
+          if (reset || sessionStorage.getItem(keyval[0]) === null) {
+            sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
+          }
+        }
+      }
+        var param = sessionStorage.getItem("doss_utm_source");
+        if (param === null) {
+          param="";
+        }
+        mixpanel.track('user_landed', {
+            'referrer': param
+        });
+    }
+    setTimeout(function(){queryForm();}, 3000);
+  </script>
+  <body>
+    <div class="signupmodal" id="myModal" >
+      <div class="modalcontent" >
+        <div style="display: flex; justify-content: flex-end; width: 100%; " >
+          <p onClick="closeModal();" >X</p>
+        </div>
+        <div style="width: 50%; height: 30vh; background: url(./assets/modal-image.png) no-repeat center; background-size: contain; " ></div>
+        <h2 id="lym" >Build your blockchain game! </h2>
+        <form id="test-form" style="display: flex; flex-direction: column;" >
+          <input
+            name="mobile"
+            placeholder="mobile"
+            maxlength="10"
+            class="mobile"
+            type="tel"
+          />
+          <button class="btn" type="submit" id="submit-form">Join The Waitlist</button>
+          <button class="btn" id="discordbtn"
+            onClick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
+            >
+            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
+            </a>  
+          </button>
+        </form>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; padding: 0 1rem">
+      <header>
+        <div
+          style="
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            src="./assets/logo.png"
+            style="height: 2rem; margin-right: 0.5rem"
+          />
+          <p style="font-weight: bold; font-size: 1.4rem;">DOSS</p>
+        </div>
+        <div style="display: flex; align-items: center; font-size: 0.8rem;" >
+          <a
+            onclick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
+            style="color: #ffcf00"
+            class="header-link"
+            id="discordlink"
+            >
+            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
+            </a>
+        </div>
+      </header>
+    </div>
+    <div> 
+      <!-- <section style="background: linear-gradient(0deg, rgba(86,75,255, 0.2), rgba(86,75,255, 0.2)), url('./assets/landingpage.png'); background-size: cover; background-position: center;" class="vertical"> -->
+      <section  class="mainSection" >
+        <div class="mainSectionDiv" >
+          <div class="mainContent">
+            <h1 style=" color: #fefefe; margin: 0; font-size: 2.3rem; line-height: 3.5rem; ">
+              BUILD YOUR OWN BLOCKCHAIN GAMES
+            </h1>
+            <h3 style="color:#efefef; margin:2rem 0; font-weight:500; font-size: 1rem; " >
+              No-code blockchain game editor
+            </h3>
+            <div>
+              <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; padding-bottom: 2rem; align-items: center; justify-content: flex-end; width: 100%; " >
+          <div class="fixed-footer" style="display: flex; align-items: center; justify-content: center; max-width: 640px; color: #efefef;" >
+            <a href="https://github.com/dossgames/P2E-Games" target="_blank" >GITHUB</a>
+            &emsp; | &emsp;
+            <a href="https://tanmay-joshi.notion.site/Doss-Job-Board-81c8ee2506f94df5aa09b276d30f1e0d" target="_blank ">HIRING</a>
+            &emsp; | &emsp;
+            <a href="https://discord.gg/K3WRhMph5q" target="_blank">DISCORD</a>
+          </div>
+          <br/>
+            <h6 style="color: #efefef; font-weight: 400;">
+              Doss - © 2022 All Rights Reserved.
+            </h6 >
+        </div>
+      </section>
+      
+    </div>
+    
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="jquery.serialize-object.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

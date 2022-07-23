@@ -1,0 +1,1452 @@
+/*responsive CSS*/
+
+@media only screen and (max-width: 2000px) {
+    .doss-banner-section {
+        padding-top: 230px;
+    }
+}
+@media only screen and (min-width: 1501px) {
+    .interoparable-image img{
+        max-width: 64%;
+    }
+    .doss-banner-section.developer img{
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+.doss-banner-section .col:last-child .banner-image {
+    max-width: 80%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.doss-banner-section.player .col:first-child .banner-image {
+    max-width: 80%;
+    width: 100%;
+}
+.doss-banner-section.player .banner-text {
+    font-size: 48px;
+    line-height: 70px;
+}
+.doss-banner-section.player {
+    padding-top: 200px;
+}
+.doss-btn-section img {
+    max-width: 200px;
+    margin-top: 12px;
+}
+.doss-banner-section.developer img{
+    max-width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .doss-banner-section {
+        padding-top: 260px;
+    }
+    .doss-banner-section.player .col:first-child .banner-image img {
+    max-height: 78px;
+}
+.blockchain-game-section .interoperable-text {
+    max-width: 1330px;
+    margin: 50px auto 0;
+}
+    nav ul a {
+    font-size: 18px;
+    }
+    .doss-logo img {
+    max-width: 80px;
+}
+    .devoloper-main-section, .players-main-section, .about-us-main-section, .contact-main-section {
+        background-position: 0% 100%;
+    }
+    .hiring-main-section {
+        background-size: contain;
+    }
+    #nav-mobile li {
+        height: 30px;
+        line-height: 30px;
+    }
+    .doss-btn.small {
+        min-width: 260px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 20px;
+    }
+    .hp-heading{
+        font-size: 38px;
+        line-height: 70px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .whyd-image img {
+        max-width: 70%;
+    }
+    .onewallet-image img {
+        width: 65%;
+        max-width: 700px;
+    }
+    .doss-banner-section {
+        background-size: 100%;
+        padding-top: 200px;
+    }
+    .doss-banner-section.hiring {
+        height: 900px;
+    }
+    .form-section .interoperable-text{
+        width: 100%;
+        font-size: 46px;
+    line-height: 50px;
+    }
+    ul#nav-mobile {
+        margin-top: 0px;
+    }
+    .hp-banner-sec .banner-image img{
+        width: 100%;
+        max-width: 500px;
+    }
+    .dcp-section .banner-image img{
+        max-width: 320px;
+    }
+  
+    .where-hp-text {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .brown-black-btn{
+        font-size: 26px;
+        line-height: 64px;
+    }
+    .interoperable-text {
+        font-size: 70px;
+        line-height: 76px;
+    }
+    .interoparable-image img{
+        width: 100%;
+    }
+    .doss-btn{
+        font-size: 24px;
+        line-height: 80px;
+        height: 80px;
+        min-width: 270px;
+    }
+    .brown-btn{
+        font-size: 26px;
+        line-height: 60px;
+    }
+    .whyd-heading {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    .blockchain-section {
+        padding: 50px 0 80px;
+    }
+    .interoparable-steam-web-main-section{
+        background-size: contain;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .interoparable-section {
+        padding: 140px 0;
+    }
+    .border-white{
+        margin-top: 142px;
+    }
+    .year-heading {
+        font-size: 40px;
+        line-height: 90px;
+    }
+    .blockchain-grid{
+        height: 360px;
+        width: 360px;
+        font-size: 20px;
+        padding: 30px 30px;
+        margin: 10px;
+        line-height: 30px;
+    }
+    .blockchain-main-grid{
+        height: auto;
+        background-size: contain;
+        padding-bottom: 100px;
+    }
+    .roadmap-desc {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .cdp-grid{
+        height: 460px;
+        width: 310px;
+        padding: 0 25px;
+        margin: 15px;
+    }
+    .cdp-grid img{
+        width: 75%;
+        float: right;
+    }
+    .cdp-heading {
+        font-size: 30px;
+        line-height: 34px;
+        padding-bottom: 6px;
+    }
+    .cdp-desc {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .cdp-section{
+        height: auto;
+        margin: 100px 0 0;
+    }
+    .form-section{
+        margin: 0;
+    }  
+    /*players css*/
+    .blockchain-content {
+        padding: 22px 24px;
+    }
+    .bgame-name {
+        font-size: 21px;
+        line-height: 44px;
+    }
+    .bgame-desc {
+        min-height: 450px;
+    }
+    header {
+        margin-top: 60px;
+    }
+    .footer-banner-heading {
+       font-size: 46px;
+    line-height: 56px;
+    }
+    .footer-join-us {
+    font-size: 30px;
+}
+    /*players css*/
+
+    /*developer css*/
+    .doss-banner-section.developer {
+        padding-top: 230px;
+    }
+    .banner-text {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .interoperable-text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .weare-brecking-section .interoperable-text {
+        padding: 110px 0 80px 0;
+    }
+    .decent-image img {
+        max-width: 86%;
+    }
+    .decent-image {
+        bottom: -80px;
+    }
+    .decent-game .decent-image img{
+        float: right;
+    }
+    .hiw-heading {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .doss-desc {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .howit-section{
+        margin: 50px auto!important;
+    }
+    .interoparable-image img {
+        width: 80%;
+    }
+    .footer-banner-section .row{
+        margin-top: 130px!important;
+        height: 460px;
+    }
+    .footer-image img {
+    width: 83%;
+    margin: 0 auto;
+}
+    /*developer css*/
+    /*about us css*/
+    .investors-locations {
+        display: inline-flex;
+        text-align: left;
+        justify-content: center;
+    }
+    .who-we-are-image {
+    position: absolute;
+    left: -70px;
+    bottom: -47px;
+}
+.who-we-are-image img {
+    max-width: 460px;
+}
+.wwr-desc p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
+.who-we-are-section .row{
+    height:490px;
+}
+    .investor-grid {
+        width: 290px;
+    }
+    .investor-location-name {
+        font-size: 22px;
+        padding: 12px 14px 20px;
+        text-align: center;
+    }
+    .investor-location-ind{
+        max-width: 260px;
+        margin: 0 20px;
+    }
+    .investor-location-image img{
+        max-width: 80%;
+    }
+    .brains-grid {
+        width: 265px;
+        height: 300px;
+        margin: 150px 10px 50px;
+    }
+    .brain-image {
+        margin-bottom: 25px;
+    }
+    /*about us css*/
+    /*careers css*/
+    .doss-banner-section.hiring .banner-heading {
+        font-size: 62px;
+        line-height: 80px;
+    }
+    .doss-banner-section.hiring .row {
+        /* height: 560px; */
+    }
+    .journey-image img {
+        min-width: 80px;
+        max-width: 100%;
+    }
+    .journey-points {
+        padding: 30px 0;
+    }
+    .journey-desc {
+        padding-left: 40px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .photo-gallery-two {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .photo-gallery-section{
+        display: inline-flex;
+        align-items: center;
+    }
+    /*careers css*/
+    /*terms and condition css*/
+.termscondition-section {
+    padding: 50px 0;
+    text-align: left;
+}
+.termscondition-section .heading{
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.termscondition-section .sub-heading{
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+}
+.termscondition-section p{
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+}
+.termscondition-section ul li{
+list-style-type: disc;
+font-size: 16px;
+}
+/*terms and condition css*/
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        width: 90%;
+    }
+    .border-white{
+        margin-top: 121px;
+    }
+    body {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    header {
+        margin-top: 50px;
+    }
+    ul#nav-mobile {
+        margin-top: 0;
+    }
+    #nav-mobile li {
+        height: 36px;
+        line-height: 36px;
+    }
+    .hp-heading {
+        font-size: 32px;
+    }
+    .hp-banner-sec .banner-image img {
+        max-width: 420px;
+    }
+    .interoparable-steam-web-main-section {
+        margin-bottom: 0px;
+    }
+    .blockchain-main-grid {
+        padding-bottom: 0px;
+    }
+    .doss-btn {
+        line-height: 70px;
+        height: 70px;
+        min-width: 230px;
+        border-radius: 16px;
+    }
+    .dcp-section .banner-image img {
+        max-width: 300px;
+    }
+    .interoperable-text {
+        font-size: 46px;
+        line-height: 54px;
+    }
+    .doss-desc {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blockchain-grid {
+        height: 270px;
+        width: 270px;
+        padding: 30px 20px 30px 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .doss-heading {
+        font-size: 70px;
+        line-height: 86px;
+    }
+    .year-heading {
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .cdp-section {
+        margin: 100px 0 0;
+    }
+    .cdp-grid {
+        height: 420px;
+        width: 270px;
+        margin: 10px;
+        padding: 0 25px;
+    }
+    .cdp-heading {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .cdp-desc {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .cdp-content {
+        bottom: 20px;
+    }
+    .footer-left-section img{
+        max-width: 90%;
+    }
+    /*players css*/
+    nav ul a {
+        font-size: 18px;
+        line-height: 32px;
+}
+#nav-mobile li {
+    height: 32px;
+    line-height: 32px;
+}
+.doss-banner-section.player .banner-text {
+    font-size: 80px;
+    line-height: 94px;
+}
+.bgame-desc {
+    font-size: 16px;
+    line-height: 22px;
+    min-height: auto;
+}
+.doss-btn.extra-small {
+    min-width: 205px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 15px;
+}
+.whyd-heading {
+    font-size: 36px;
+    line-height: 36px;
+}
+.whyd-desc {
+    font-size: 16px;
+    line-height: 22px;
+}
+.footer-banner-heading {
+    font-size: 40px;
+    line-height: 52px;
+}
+.footer-banner-content {
+    padding-left: 0;
+}
+.footer-banner-section .row{
+    height: 490px;
+    margin-top: 110px!important;
+    margin-bottom: 110px !important;
+}
+/*players css*/
+/*about us css*/
+.who-we-are-image {
+    left: -160px;
+    bottom: -40px;
+}
+.who-we-are-image img {
+    max-width: 70%;
+}
+.who-we-are-section .row{
+    padding: 20px 0!important;
+    height: auto;
+}
+/*about us css*/
+/*careers css*/
+.doss-banner-section.hiring {
+    height: 1000px;
+}
+/*careers css*/
+/*contact us css*/
+.address-ind {
+    width: 350px;
+    margin: 0 20px;
+}
+/*contact us css*/
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+    .border-white{
+     display: none;
+    }
+    .header-flex{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 90%;
+    }
+    .profile-text{
+        display: none;
+    }
+    .profile-section{
+        width: auto;
+    }
+    header .row{
+        text-align: center;
+    }
+    nav a.sidenav-trigger i {
+        font-size: 50px;
+    }
+    .doss-logo a{ 
+        display: inline-flex;
+        align-items: center;
+        height: 64px;
+        line-height: 64px;
+    }
+    .hp-banner-sec .banner-image img {
+        max-width: 420px;
+    }
+    .brown-black-btn, .brown-btn {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .where-hp-text {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .interoparable-section .row {
+        display: inline-block;
+    }
+    .interoparable-image img {
+        width: 90%;
+        max-width: 250px;
+        margin-bottom: 50px;
+    }
+    .steam-web-section .row{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .steam-web-section .row .col:first-child{
+        order: 2;
+    }
+    .steam-web-section .row .col:last-child{
+        order: 1;
+    }
+    .blockchain-grid {
+        height: 240px;
+        width: 240px;
+        padding: 20px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .doss-heading {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .year-heading {
+        font-size: 40px;
+        line-height: 70px;
+        text-align: left;
+        display: inline-block;
+    }
+    .pink-bullet {
+        height: 26px;
+        width: 26px;
+        margin: 22px 10px;
+        float: left;
+    }
+    .roadmap-grid {
+        text-align: left;
+    }
+    .roadmap-desc {
+        font-size: 18px;
+        text-align: left;
+        margin:0 0 40px;
+        max-width: 100%;
+    }
+    .interoperable-text {
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .cdp-grid {
+        height: 320px;
+        width: 90%;
+        margin: 6px;
+        padding: 0 15px;
+        max-width: 330px;
+    }
+    .cdp-heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .cdp-desc {
+        font-size: 16px;
+        line-height: 20px;
+        height: 90px;
+    }
+    .cdp-content {
+        bottom: 15px;
+    }
+    .doss-btn {
+        line-height: 70px;
+        height: 70px;
+        min-width: 220px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    .doss-desc2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .community-form-section form .row {
+        display: inline-block;
+    }
+    form .input-field {
+       line-height: 3rem;
+    }
+    .footer-left-section {
+        padding: 60px 0 30px !important;
+    }
+   
+    .footer-left-section .col{
+        width: 33%!important;
+    }
+    .footer-left-section img {
+        width: 100%;
+        max-width: 140px;
+        margin-bottom: 40px;
+    }
+    form .input-field input{
+        height: 68px!important;
+    font-size: 20px!important;
+    }
+    select{
+        height: 68px;
+    }
+    .doss-banner-section .row {
+        flex-direction: column-reverse;
+    }
+    .copy-right, .copy-right a {
+        padding-bottom: 70px;
+    }
+    /*players css*/
+    .doss-btn.small {
+        min-width: 230px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 16px;
+    }
+    .blockchain-content {
+        padding: 12px 14px;
+    }
+    .bgame-name {
+        font-size: 24px;
+        line-height: 46px;
+    }
+    .blockchain-game-ind{
+        border-radius: 30px;
+        margin-bottom: 40px;
+    }
+    .bgame-main-grid {
+        padding: 50px 0;
+    }
+    .whyd-content.row {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+    }
+    .whyd-image img {
+        max-width: 210px;
+        max-height: 200px;
+    }
+    .whyd-image {
+        text-align: left;
+    }
+    .why-dossverse-grid{
+        height: 270px;
+        position: relative;
+        border-radius: 30px;
+    }
+    .onewallet-section {
+        padding-top: 40px;
+    }
+    .onewallet-image {
+        padding-top: 40px;
+    }
+    .footer-banner-heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .footer-join-us {
+        font-size: 26px;
+        line-height: 70px;
+    }
+    .footer-banner-section .row {
+        height: 350px;
+        margin-top: 70px!important;
+        margin-bottom: 70px !important;
+        padding: 0 20px!important;
+    }
+    .doss-btn-section{
+        display: inline-block;
+    }
+    .doss-btn-section a{
+     margin-bottom: 30px;
+    }
+    .footer-left-section .col:first-child {
+        width: 100%!important;
+    }
+    .doss-btn-section a > img{
+        margin: 0px;
+       }
+       .doss-btn-section a {
+        display: inline-block;
+        max-width: 250px;
+        min-width: 250px!important;
+        vertical-align: top;
+    }
+    /*players css*/
+    /*developer css*/
+    .doss-banner-section.developer {
+        padding-top: 160px;
+    }
+    .decent-image {
+        position: inherit;
+    max-width: 250px;
+    margin-top: -50px;
+    }
+    .decentralized-section{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        padding: 40px 0!important;
+    }
+    .row.decentralized-section.decent-game {
+        float: right;
+        flex-direction: column-reverse;
+        margin-bottom: 30px!important;
+    }
+    .how-it-work-section {
+        margin-top: 30px;
+    }
+    .decent-game .decent-content {
+        padding-left: 0;
+    }
+    .decent-game .decent-image {
+        text-align: right;
+        float: right;
+    }
+    .how-it-work-section .interoperable-text.center {
+        padding: 20px 0 50px;
+    }
+    .hiw-heading {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .doss-desc {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .hiw-img img {
+        max-width: 100px;
+    }
+    .hiw-img {
+        height: 120px;
+    }
+    .howit-section {
+        flex-direction: column;
+    }
+    .doss-desc ul > li {
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 16px;
+    }
+    .banner-image img {
+        max-width: 90%;
+        /* width: 90%; */
+    }
+    /*developer css*/
+
+    /*about us css*/
+    .who-we-are-section {
+        margin: 50px 0;
+    }
+    .who-we-are-image {
+        position: inherit;
+    }
+    .who-we-are-section .row{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0!important;
+        border-radius: 30px;
+    }
+    .wwr-desc {
+        padding-top: 20px;
+    }
+    .brains-grid {
+        width: 235px;
+        height: 270px;
+        margin: 90px 10px 30px;
+    }
+    .brain-name {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .brain-designation {
+        height: 60px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .brain-image {
+        margin-top: -65px;
+    }
+    .brain-image img{
+        max-width: 130px;
+    }
+    .investor-location-ind{
+        width: 260px;
+        padding: 10px 0;
+    }
+    .investors-locations {
+        display: inline-block;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .doss-games2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .investor-image img {
+        max-width: 130px;
+    }
+    .investor-grid {
+        width: 230px;
+    }
+    /*about us css*/
+
+    /*careers css*/
+    .doss-banner-section.hiring {
+        height: 600px;
+    }
+    .doss-banner-section.hiring .row {
+        height: 360px;
+    }
+    .lifeat-doss-section .row.my_row{
+        flex-direction: column;
+    }
+    .lifeatdoss-desc p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .photo-gallery-section {
+        padding: 10px 10px 10px 0;
+        border-radius: 20px;
+    }
+    .opening-positions-main {
+        display: inline-block;
+    }
+    /*careers css*/
+    /*contact us css*/
+    .address-ind {
+        width: 450px;
+        height: auto;
+        margin: 20px 20px;
+    }
+    .addresses-section {
+        margin: 60px 0;
+    }
+    .mail-content {
+        padding-left: 40px;
+    }
+    .mail-image img {
+        max-width: 130px;
+    }
+    .doss-banner-section{
+        text-align: center;
+    }
+    .interoparable-content-section.left-align{
+        text-align: center;
+    }
+    .cdp-grid img {
+        width: 60%;
+    }
+    .doss-banner-section {
+        text-align: center;
+    }
+    /*contact us css*/
+}
+
+@media only screen and (max-width: 768px) {
+.footer-left-section .col:first-child {
+width: 100%!important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .doss-logo a{
+        justify-content: right;
+    }
+    .doss-logo img {
+        max-width: 70%;
+    }
+    .banner-image img{
+        max-width: 280px;
+    }
+    html,
+body {
+    font-size: 16px;
+    line-height: 24px;
+}
+.interoparable-image{
+    text-align: center;
+}
+.hp-banner-sec .banner-image img {
+    max-width: 60%;
+    margin-bottom: 10px;
+}
+.dcp-section .banner-image img {
+    max-width: 150px;
+}
+.interoparable-content-section.left-align{
+    text-align: center;
+}
+.cdp-grid {
+    height: 320px;
+    width: 90%;
+    margin: 6px;
+    padding: 0 15px;
+    max-width: 330px;
+    background-color: rgb(16 16 16 / 45%);
+    box-shadow: inset 0px 0px 40px 10px rgb(54 54 54 / 72%);
+}
+.cdp-grid:last-child{
+    box-shadow: none;
+}
+.doss-banner-section .row .col:first-child .banner-image{
+    text-align: center;
+}
+    .hp-banner-sec {
+        padding-top: 40px;
+    }
+    header {
+        margin-top: 20px;
+    }
+    .hp-heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .dcp-section {
+        padding: 20px 0 0;
+    }
+    .where-hp-text {
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+    .interoparable-image img {
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
+    .brown-black-btn {
+        font-size: 18px;
+        line-height: 50px;
+        padding: 0 20px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 12px;
+    }
+    .cdp-grid img {
+        width: 58%;
+        float: right;
+    }
+    .interoperable-text {
+        font-size: 30px;
+        line-height: 36px;    
+    }
+    .doss-desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .doss-btn {
+        line-height: 60px;
+        height: 60px;
+        min-width: 200px;
+    }
+    .brown-btn {
+        font-size: 18px;
+        line-height: 50px;
+        border-radius: 15px;
+    }
+    .interoparable-section {
+        padding-bottom: 50px;
+    }
+    .interoparable-steam-web-main-section {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .steam-web-section {
+        padding-bottom: 50px;
+    }
+    .blockchain-section .doss-desc {
+        padding: 0 0 20px 0;
+    }
+    .blockchain-grid {
+        height: 180px;
+        border-radius: 20px;
+        max-width: 300px;
+        width: 90%;
+    
+    }
+    .roadmap-section .doss-heading {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pink-bullet {
+        height: 16px;
+        width: 16px;
+    }
+    .year-heading {
+        font-size: 32px;
+        line-height: 60px;
+    }
+    .roadmap-desc {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .blockchain-main-grid {
+        padding: 50px 0;
+    }
+    .cdp-section {
+        margin: 50px 0;
+        background-repeat: repeat;
+        background-position: 100% 0px;
+    }
+    .community-form-section form .input-field {
+        margin: 10px 0;
+    }
+    .footer-heading {
+        font-weight: 700;
+        margin-bottom: 6px;
+        margin-top: 20px;
+    }
+    .doss-desc2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .copy-right {
+        padding-bottom: 70px;
+    }
+    .form-section {
+        padding: 0 0 60px 0;
+    }
+    .cdp-grid.doss-btn-section{
+        height: 200px;
+    }
+    .blockchain-section {
+        padding: 30px 0;
+    }
+    .footer-left-section img {
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+    /*player css*/
+    .doss-banner-section.player .banner-text {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .doss-banner-section {
+        padding-top: 100px;
+    }
+    .doss-btn-section a {
+        margin: 15px 0;
+        display: inline-block;
+        max-width: 200px;
+        min-width: 200px!important;
+        padding: 0;
+        font-size: 18px;
+    }
+    .doss-banner-section.developer .col:first-child img {
+        max-width: 350px;
+    }
+    .doss-banner-section.developer {
+        padding-top: 110px;
+    }
+    .whyd-heading {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .why-dossverse-grid {
+        height: 350px;
+        border-radius: 20px;
+    }
+    .footer-image {
+        position: initial;
+    }
+    .footer-banner-section .row{
+        height: auto;
+        flex-direction: column-reverse;
+        border-radius: 16px;
+        padding: 40px 20px!important;
+        margin-top: 30px!important;
+    }
+    .doss-banner-section.aboutus .banner-image img {
+        width: 100%;
+        max-width: 280px;
+    }
+    .footer-banner-content {
+        padding-top: 30px;
+        text-align: center;
+    }
+    .footer-banner-heading {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .doss-logo {
+        padding-right: 8px;
+    }
+    .footer-left-section .col {
+        width: 100%!important;
+        text-align: center;
+    }
+    .footer-left-section ul.footer-links li{
+        display: inline-block;
+        margin: 0 7px 5px;
+    }
+    .doss-banner-section.player .col{
+        text-align: center;
+    }
+    .whyd-image img {
+        max-width: 170px;
+        max-height: 180px;
+    }
+    .whyd-image {
+        display: inline-flex;
+        align-items: center;
+        height: 200px;
+    }
+    /*player css*/
+    /*developer css*/
+    .decent-game .decent-image img {
+        float: left;
+        transform: scaleX(-1);
+        border-radius: 20px;
+    }
+    .decent-game .decent-image {
+        text-align: right;
+        float: left;
+    }
+    .doss-banner-section.player .col:last-child .banner-image{
+        margin-right: 30px;
+    }
+    .decent-image img {
+        margin-bottom: 30px;
+    }
+    .banner-image {
+        text-align: center;
+    }
+    .banner-text {
+        font-size: 32px;
+        line-height: 40px;
+    text-align: center;
+    }
+    .decentralized-section{
+        padding: 10px 0!important;
+        border-radius: 10px;
+    }
+    .doss-banner-desc {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .weare-brecking-section .interoperable-text {
+        padding: 70px 0;
+    }
+    .doss-banner-section.developer .col{
+        text-align: center;
+    }
+    .decent-btn {
+        font-size: 14px;
+        border-radius: 7px;
+        padding: 5px 10px;
+    }
+    .decent-heading {
+        font-size: 26px;
+        padding: 20px 0;
+        line-height: 30px;
+    }
+    .decent-desc {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 0px;
+    }
+    .how-it-work-section .interoperable-text.center {
+        padding: 20px 0;
+    }
+    .hiw-img img {
+        max-width: 70px;
+    }
+    .hiw-img {
+        height: 90px;
+    }
+    .doss-desc {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+    .interoparable-image img {
+        max-width:150px;
+    }
+    .doss-desc ul > li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    /*developer css*/
+
+    /*about us*/
+    .who-we-are-section .row {
+        margin: 30px 0!important;
+        padding: 0!important;
+        border-radius: 10px;
+    }
+    .brain-name {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .brain-designation {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .brains-grid {
+        width: 235px;
+        height: 240px;
+    }
+    .investor-location-ind {
+        width: 100%;
+        padding: 10px 0;
+        max-width: 90%;
+    }
+    .investor-location-image{
+        max-width: 150px;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        height: 80px;
+    }
+    a.open-position {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 205px;
+        vertical-align: top;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .location-section img {
+        max-width: 80px;
+    }
+    .address-heading {
+        font-size: 22px;
+        line-height: 50px;
+    }
+    .wwr-desc p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .who-we-are-section {
+        margin: 10px 0;
+    }
+    .doss-games2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    /*about us*/
+    /*careers css*/
+    .doss-banner-section.hiring .banner-heading {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    .doss-banner-section.hiring .row {
+        height: 230px;
+    }    
+    .doss-banner-section.hiring {
+        height: 400px;
+    }
+    .your-journey-section .interoperable-text {
+        padding-bottom: 30px;
+    }
+    .journey-points-section {
+        padding: 0;
+    }
+    .journey-image img {
+        min-width: 50px;
+        max-width: 50px;
+    }
+    .journey-desc {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .journey-points {
+        padding: 16px 0;
+        align-items: flex-start;
+    }
+    .lifeat-doss-section {
+        padding: 30px 0;
+    }
+    .lifeatdoss-desc p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 12px 0;
+    }
+    .photo-gallery-section {
+        display: inline-block;
+        border-radius: 20px;
+        padding: 20px 10px;
+    }
+    .photo-gallery img{
+        margin: 0;
+    }
+    .writeus-heading {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 12px;
+    }
+    .write-us-section {
+        padding-bottom: 40px;
+    }
+    .open-position-name {
+        padding: 10px 0 30px 0;
+    }
+    .hiring-main-section {
+        background-size: contain;
+        background-position: 100% 90px;
+    }
+    /*careers css*/
+    /*contact us*/
+    .address-ind {
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .mail-section {
+        margin: 0 0 50px 0;
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .mail-content {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    /*contact us*/
+
+    .termscondition-section .heading {
+        font-size: 16px;
+        padding-bottom: 18px;
+    }
+    .termscondition-section p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .termscondition-section .sub-heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .termscondition-section ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .termscondition-section ul {
+        padding-left: 25px;
+    }
+    ul li.rm-completed{
+        list-style-image: url(../images/green-bullet-mbl.png); 
+    }
+    ul li.rm-inprogress{
+        list-style-image: url(../images/yellow-bullet-mbl.png);
+    }
+    .roadmap-desc ul {
+        padding-left: 30px;
+    }
+}

@@ -1,136 +1,583 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/logo.ico" type="image/icon type" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Doss - Build blockchain games</title>
-  </head>
-  <script>
-    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 
-    // Enabling the debug mode flag is useful during implementation,
-    // but it's recommended you remove it for production
-    mixpanel.init('5355e33f334fc2a7369949393e489e5e'); // Replace YOUR_TOKEN with your token from mixpanel.com
-    var queryForm = function(settings){
-      var reset = settings && settings.reset ? settings.reset : false;
-      var self = window.location.toString();
-      var querystring = self.split("?");
-      if (querystring.length > 1) {
-        var pairs = querystring[1].split("&");
-        for (i in pairs) {
-          var keyval = pairs[i].split("=");
-          if (reset || sessionStorage.getItem(keyval[0]) === null) {
-            sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
-          }
-        }
-      }
-        var param = sessionStorage.getItem("doss_utm_source");
-        if (param === null) {
-          param="";
-        }
-        mixpanel.track('user_landed', {
-            'referrer': param
-        });
-    }
-    setTimeout(function(){queryForm();}, 3000);
-  </script>
-  <body>
-    <div class="signupmodal" id="myModal" >
-      <div class="modalcontent" >
-        <div style="display: flex; justify-content: flex-end; width: 100%; " >
-          <p onClick="closeModal();" >X</p>
-        </div>
-        <div style="width: 50%; height: 30vh; background: url(./assets/modal-image.png) no-repeat center; background-size: contain; " ></div>
-        <h2 id="lym" >Build your blockchain game! </h2>
-        <form id="test-form" style="display: flex; flex-direction: column;" >
-          <input
-            name="mobile"
-            placeholder="mobile"
-            maxlength="10"
-            class="mobile"
-            type="tel"
-          />
-          <button class="btn" type="submit" id="submit-form">Join The Waitlist</button>
-          <button class="btn" id="discordbtn"
-            onClick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
-            >
-            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
-            </a>  
-          </button>
-        </form>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: center; padding: 0 1rem">
-      <header>
-        <div
-          style="
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <img
-            src="./assets/logo.png"
-            style="height: 2rem; margin-right: 0.5rem"
-          />
-          <p style="font-weight: bold; font-size: 1.4rem;">DOSS</p>
-        </div>
-        <div style="display: flex; align-items: center; font-size: 0.8rem;" >
-          <a
-            onclick="window.open(`https://discord.gg/K3WRhMph5q`, `_blank`).focus"
-            style="color: #ffcf00"
-            class="header-link"
-            id="discordlink"
-            >
-            <img src="./assets/discord.svg" alt="Discord" height="30rem" width="auto" />
-            </a>
-        </div>
-      </header>
-    </div>
-    <div> 
-      <!-- <section style="background: linear-gradient(0deg, rgba(86,75,255, 0.2), rgba(86,75,255, 0.2)), url('./assets/landingpage.png'); background-size: cover; background-position: center;" class="vertical"> -->
-      <section  class="mainSection" >
-        <div class="mainSectionDiv" >
-          <div class="mainContent">
-            <h1 style=" color: #fefefe; margin: 0; font-size: 2.3rem; line-height: 3.5rem; ">
-              BUILD YOUR OWN BLOCKCHAIN GAMES
-            </h1>
-            <h3 style="color:#efefef; margin:2rem 0; font-weight:500; font-size: 1rem; " >
-              No-code blockchain game editor
-            </h3>
-            <div>
-              <button class="btn" id="signupbtn" onClick="openModal();" >Join the Waitlist</button>
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <title>Blockchain Gaming Platform | Games On The Blockchain | Doss Games</title>
+    <meta name="description"
+        content="Doss Games is more than a blockchain gaming platform - it's a community-driven ecosystem of developers and gamers who collectively design and own games on Web3" />
+    <meta name="keywords"
+        content="games on the blockchain, Blockchain Gaming, blockchain gaming platform, blockchain based games" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css?<?= time() ?>" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/responsive.css?<?= time() ?>" media="screen,projection" />
+    <meta name="google-site-verification" content="fLVS3U1c8dtzB-D9rFUTrd6i992vMe7Wgz83RsEkFcY" />
+</head>
+
+<body>
+    <div class="main-doss-wrapper">
+        <header>
+            <div class="row">
+                <div class="header-flex">
+                    <div class="col l4 my_row">
+                        <div class="doss-menu">
+                            <nav class="nav-extended">
+                                <div class="nav-wrapper wow fadeIn" data-wow-delay="0.5s">
+                                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                            class="material-icons">menu</i></a>
+                                    <ul id="nav-mobile" class="hide-on-med-and-down">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="players.html">Players</a></li>
+                                        <li><a href="developers.html">Developers</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <ul class="sidenav" id="mobile-demo">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="players.html">Players</a></li>
+                                <li><a href="developers.html">Developers</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l4 my_row">
+                        <div class="doss-logo  wow fadeIn" data-wow-delay="0.5s">
+
+
+                        
+<a href="/dossgames/"><img src="images/logo2.png"></a>
+
+                            <!-- <a href="/dossgames/"><img src="images/logo.png"></a> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col l4 my_row">
+                        <div class="profile-section">
+                            <img src="images/profile-icon.png" />
+                            <a href="#" class="profile-text">Profile</a>
+                        </div>
+                    </div> -->
+                </div>
             </div>
-          </div>
-        </div>
-        <div style="display: flex; flex-direction: column; padding-bottom: 2rem; align-items: center; justify-content: flex-end; width: 100%; " >
-          <div class="fixed-footer" style="display: flex; align-items: center; justify-content: center; max-width: 640px; color: #efefef;" >
-            <a href="https://github.com/dossgames/P2E-Games" target="_blank" >GITHUB</a>
-            &emsp; | &emsp;
-            <a href="https://tanmay-joshi.notion.site/Doss-Job-Board-81c8ee2506f94df5aa09b276d30f1e0d" target="_blank ">HIRING</a>
-            &emsp; | &emsp;
-            <a href="https://discord.gg/K3WRhMph5q" target="_blank">DISCORD</a>
-          </div>
-          <br/>
-            <h6 style="color: #efefef; font-weight: 400;">
-              Doss - © 2022 All Rights Reserved.
-            </h6 >
-        </div>
-      </section>
-      
-    </div>
-    
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="jquery.serialize-object.min.js"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+        </header>
+        <div class="doss-body-wrapper homepage-wrapper">
+            <div class="doss-banner-section homepage">
+                <div class="container">
+                    <div class="row my_row">
+                        <div class="hp-banner-sec">
+                            <div class="hp-heading wow fadeIn" data-wow-delay="0.3s">
+                                Enter a whole new dimension of
+                            </div>
+                            <div class="banner-image">
+                                <img src="images/internet-economies-image.png">
+                            </div>
+                            <div class="banner-image wow fadeInUp" data-wow-delay="0.5s">
+                                <img src="images/4cubes-image.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dcp-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-image wow fadeIn" data-wow-delay="0.5s">
+                            <div class="setting-round">
+                                <img class="rotate" src="images/inner-setting-image.png">
+                            </div>
+                        </div>
+                        <div class="where-hp-text">
+                            where <span>developers</span>,<span> creators</span>, and
+                            <span>players</span> can thrive mutually in
+                            a world of Blockchain gaming!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interoparable-steam-web-main-section">
+                <div class="interoparable-section">
+                    <div class="container">
+                        <div class="row my_row">
+                            <div class="col l4 m12 s12 my_row">
+                                <div class="interoparable-image">
+                                    <img src="images/interopole.png" />
+                                </div>
+                            </div>
+                            <div class="col l8 m12 s12 my_row">
+                                <div class="interoparable-content-section left-align">
+                                    <div class="brown-black-btn">
+                                        Doss Games for Developers
+                                    </div>
+                                    <div class="interoperable-text">
+                                        Interoperable game development infrastructure
+                                    </div>
+                                    <div class="doss-desc">
+                                        Build and launch your own Blockchain games with our powerful SDKs and plugins,
+                                        turn them
+                                        into engaging and competitive experiences for users, and collaborate with a
+                                        community of
+                                        designers, artists, and developers - while boosting your revenue!
+                                    </div>
+                                    <div class="doss-btn-section">
+                                        <a href="developers.html" class="doss-btn">
+                                            Build with Doss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steam-web-section">
+                    <div class="container">
+                        <div class="row my_row">
+                            <div class="col l7 m12 s12 my_row">
+                                <div class="interoparable-content-section left-align">
+                                    <div class="brown-btn">
+                                        Doss Games for Players
+                                    </div>
+                                    <div class="interoperable-text">
+                                        Steam for Web3 mobile games
+                                    </div>
+                                    <div class="doss-desc">
+                                        Explore, play, and own unlimited blockchain games built by the game development
+                                        community!
+                                    </div>
+                                    <div class="doss-btn-section">
+                                        <a href="players.html" class="doss-btn">
+                                            Play with Doss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l5 m12 s12 my_row">
+                                <div class="interoparable-image">
+                                    <img src="images/steam-web-image.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blockchain-section">
+                <div class="container-fluid">
+                    <div class="row my_row">
+                        <div class="interoperable-text">
+                            Driven for and by Blockchain Gaming Aficionados
+                        </div>
+                        <div class="doss-desc">
+                            Dive head-first into the world of Blockchain Gaming!
+                        </div>
+                        <div class="blockchain-main-grid">
+                            <div class="blockchain-grid">
+                                Operate in a truly decentralized gaming ecosystem
+                            </div>
+                            <div class="blockchain-grid">
+                                Blockchain ensures user and game item safety
+                            </div>
+                            <div class="blockchain-grid">
+                                Developers have control over their products and the Doss economy
+                            </div>
+                            <div class="blockchain-grid">
+                                All earnings of the game go directly to the developers
+                            </div>
+                            <div class="blockchain-grid">
+                                Be a part of a community of designers, developers, business experts, and Blockchain
+                                Gaming
+                                enthusiasts alike!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-section">
+                <div class="container-fluid">
+                    <div class="doss-heading">
+                        Our Roadmap
+                    </div>
+                    <div class="border-white"></div>
+                    <div class="row my_row">
+
+                        <div class="col l4 m12 s12 my_row">
+                            <div class="roadmap-grid">
+                                <div class="year-heading">
+                                    H1 2022
+                                </div>
+                                <div class="pink-bullet"></div>
+                                <div class="roadmap-desc">
+                                    <ul>
+                                        <li class="rm-completed">Player App: 8 games live</li>
+                                        <li class="rm-completed">Doss game wallet unity plugin</li>
+                                        <li class="rm-inprogress">Staking as a platform</li>
+                                        <li class="rm-inprogress">Decentralised gaming studio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m12 s12 my_row">
+                            <div class="roadmap-grid">
+                                <div class="year-heading">
+                                    H2 2022
+                                </div>
+                                <div class="pink-bullet"></div>
+                                <div class="roadmap-desc">
+                                    <ul>
+                                        <li>Onboard 100K players</li>
+                                        <li>Onboard 500 game creators</li>
+                                        <li>Tokenomics as a platform</li>
+                                        <li>Proof of playtime</li>
+                                        <li>Moderate to earn</li>
+                                        <li>Steam 3.0</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m12 s12 my_row">
+                            <div class="roadmap-grid">
+                                <div class="year-heading">
+                                    H1 2023
+                                </div>
+                                <div class="pink-bullet"></div>
+                                <div class="roadmap-desc">
+                                    <ul>
+                                        <li>Interoperable backend/ fork and build</li>
+                                        <li>Interoperable NFT launchpad</li>
+                                        <li>Layer 1 protocol</li>
+                                        <li>Onboard 1M players and 10K game creators </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cdp-section">
+                <div class="container-fluid">
+                    <div class="row my_row">
+                        <div class="interoperable-text">
+                            Collaborate, Develop, and Publish. All in one place.
+                        </div>
+                        <div class="doss-desc">
+                            We have an exciting lineup of blockchain suites for developers:
+                        </div>
+                        <div class="cdp-main-grid">
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-crypto-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Gaming Crypto Wallet</div>
+                                    <div class="cdp-desc">Crypto wallet plugin for easy blockchain integration</div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-blockchain-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Blockchain Tournaments</div>
+                                    <div class="cdp-desc">Run tournaments in a decentralized environment and start
+                                        earning a
+                                        passive income</div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-decentralised-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Decentralized
+                                        Autonomous
+                                        Gaming Studios
+                                    </div>
+                                    <div class="cdp-desc">Collaborate with other creators and
+                                        developers to build blockchain games and distribute the ownership and revenue
+                                        fairly.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-steam-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Steam3</div>
+                                    <div class="cdp-desc">Publish your games to the world. Explore and play top
+                                        blockchain
+                                        games.</div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-fork-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Fork & Build</div>
+                                    <div class="cdp-desc">Fork the games to build mods over them. Everyone gets their
+                                        fair share
+                                        of ownership and revenue
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-interperble-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Interoperable
+                                        NFT launchpad
+                                    </div>
+                                    <div class="cdp-desc">Build your games around the top NFT projects and get
+                                        all the distributions of NFTs
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-tokenomix-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Tokenomics-as
+                                        -a-Platform
+                                    </div>
+                                    <div class="cdp-desc">Build your in-game tokenomics with ease and open your
+                                        economy to the world
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-protocol-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">L1 Protocol</div>
+                                    <div class="cdp-desc">Trustless creation, real-time playing, and ownership with L1
+                                        protocol
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-proof-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Proof-of-Playtime</div>
+                                    <div class="cdp-desc">Fraud prevention by proof-of-playtime. You unlock your tokens
+                                        as you
+                                        move forward in the ecosystem.</div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-reputation-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Reputation NFTs</div>
+                                    <div class="cdp-desc">Single-chain ID to determine your reputation in the ecosystem
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid">
+                                <div class="cdp-image">
+                                    <img src="images/cdp-moderate-image.png" />
+                                </div>
+                                <div class="cdp-content">
+                                    <div class="cdp-heading">Moderate to Earn</div>
+                                    <div class="cdp-desc">Watch and moderate games to have a fair play in the ecosystem
+                                        and
+                                        earn!</div>
+                                </div>
+                            </div>
+                            <div class="cdp-grid doss-btn-section">
+                                <a href="developers.html" class="doss-btn">
+                                    Build with Doss
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="container-fluid">
+                        <div class="row my_row">
+                            <div class="interoperable-text">
+                                This is an arcade built for the new internet era.
+                            </div>
+                            <div class="doss-desc2">
+                                We invite you to be a part of it!
+                            </div>
+                            <div class="join-community-class">
+                                Join our Community
+                            </div>
+                            <div class="community-form-section">
+                                <form id="doss-form"
+                                    onsubmit=" alert('Thank you, we have received your request. Our team will get back to you very soon');return false;">
+                                    <!-- <div class="frm_message" style="display:none">
+                                asfasdf asdfasdf asfasdf
+                            </div> -->
+                                    <div class="row my_row">
+                                        <div class="input-field col l3 m6 s12">
+                                            <input placeholder="Name" id="name" type="text" required class="validate">
+                                            <span class="nameerr" style="color: red; font-weight: 600;"></span>
+                                        </div>
+                                        <div class="input-field col l3 m6 s12">
+                                            <input id="email" type="email" class="validate" required
+                                                placeholder="Email">
+                                            <span class="emailerr" style="color: red; font-weight: 600;"></span>
+                                        </div>
+                                        <div class="input-field col l3 m6 s12">
+                                            I want to join Doss Games:
+                                        </div>
+                                        <div class="input-field col l3 m6 s12">
+                                            <div class="custom-select margin-15 ">
+                                                <select id="category" name="category">
+                                                    <option value="">Select</option>
+                                                    <option value="As a Developer">As a Developer</option>
+                                                    <option value="As a Designer">As a Designer</option>
+                                                    <option value="As a Gamer">As a Gamer</option>
+                                                    <option value="As an employee">As an employee</option>
+                                                </select>
+                                                <span class="category" style="color: red; font-weight: 600;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="center">
+                                        <button id="btn-submit" class="btn btn-success doss-btn"
+                                            onclick="readFormData()">
+                                            Submit
+                                        </button>
+                                        <!-- <a href="#" class="doss-btn">
+                                    Submit
+                                </a> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <footer>
+                    <div class="footer-main-section">
+                        <div class="container">
+                            <div class="row my_row">
+                                <div class="col l12 m12 my_row footer-left-section left-align">
+                                    <div class="col l3 m3 s6 my_row">
+                                        <div><img src="images/footer-logo.png"></div>
+                                    </div>
+                                    <div class="col l3 m3 s12 my_row">
+                                        <div class="footer-heading">Doss Ecosystem</div>
+                                        <ul class="footer-links">
+                                            <li><a href="players.html">Players</a></li>
+                                            <li><a href="developers.html">Developers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l3 m3 s12 my_row">
+                                        <div class="footer-heading">General</div>
+                                        <ul class="footer-links">
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="careers.html">Careers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l3 m3 s12 my_row">
+                                        <div class="footer-heading">Support</div>
+                                        <ul class="footer-links">
+                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l12 m12 s12 my_row">
+                                    <div class="footer-right-section">
+                                        <div class="footer-logo">
+                                            <div class="copy-right">Doss - © 2022 All Rights Reserved. | Branded by <a
+                                                    href="https://www.thegotoguy.co/" target="_blank">The Go-To Guy!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <script type="text/javascript" src="js/jquery.min.js"></script>
+                <script type="text/javascript" src="js/wow.min.js"></script>
+                <script type="text/javascript" src="js/materialize.js"></script>
+                <script type="text/javascript" src="js/global.js"></script>
+</body>
+
 </html>
+</div>
+</div>
+<script>
+/* Form Submistion */
+
+var readFormData = () => {
+    var name = $("#name").val();
+    var category = $("#category").val();
+    var email = $("#email").val();
+    var errors = 0;
+    /* Form Validation */
+    if (name == '') {
+        $(".nameerr").html("Please Fill the Name*");
+        errors++;
+    } else {
+        $(".nameerr").html("");
+    }
+
+    if (email == '') {
+        $(".emailerr").html("Please Fill the Email Id*");
+        errors++;
+    } else {
+        $(".emailerr").html("");
+    }
+    if (category == '') {
+        $(".category").html("Please select the category");
+        errors++;
+    } else {
+        $(".category").html("");
+    }
+
+    if (errors == 0) {
+
+        data = {
+            name: $("#name").val(),
+            category: $("#category").val(),
+            email: $("#email").val()
+        }
+        $.ajax({
+            url: 'data.html',
+            method: 'POST',
+            data: data,
+            // dataType:'JSON',
+            success: (res) => {
+                name = $("#name").val("");
+                category = $("#category").val("");
+                email = $("#email").val("");
+                // $(".frm_message").delay(5000).fadeOut(1000);
+
+                console.log("success");
+
+                console.log(res);
+            },
+            error: (err) => {
+                console.log(err);
+                console.log("err");
+            }
+        })
+    }
+}
+</script>

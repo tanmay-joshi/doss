@@ -1,0 +1,1246 @@
+html,
+body {
+    font-family: "inter" , sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+img {
+    border: 0;
+    outline: none;
+}
+strong {
+    font-weight: 700;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+input {
+    outline: none;
+}
+
+.clear,
+header,
+footer {
+    clear: both;
+}
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+header,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.my_row,
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+a {
+    outline: none;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100%;
+}
+
+.container {
+    /* width: 100%; */
+    max-width: 1420px;
+}
+.container-fluid {
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+/*css*/
+.sidenav {
+    padding-top: 20px;
+    background: #090909;
+    box-shadow: 0px 0px 50px 2px rgba(213 70 108 / 54%);
+}
+ .sidenav li > a.active  {
+background: linear-gradient(to right, #f06879 2%, #f25986, #ffffff00 40%), repeating-linear-gradient(to bottom, #d9fbff , #7e76d4, #4c39bc 100%);
+color: #ffffff;
+}
+.sidenav li > a:hover{
+    background-color: #161616;
+}
+.sidenav li > a {
+    color: #d5466c;
+}
+.border-white {
+    border-bottom: 2px solid #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 148px;
+    z-index: 1;
+}
+.border-white::after, .border-white::before {
+    border-bottom: 5px solid #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 148px;
+    z-index: -9;
+}
+.doss-logo img{
+    max-width: 100%;
+}
+body {
+    background-color: #090909;
+}
+.doss-body-wrapper.homepage-wrapper{
+    background: url(../images/homepage-bg-banner.jpg) no-repeat;
+    background-size: contain;
+}
+.doss-banner-section{
+    padding-top: 200px;
+}
+nav{
+    background-color: transparent;
+}
+.doss-logo{
+    text-align: center;
+}
+#nav-mobile li{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.profile-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 43px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    padding-left: 15px;
+}
+.header-flex {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.profile-section {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(26 26 26 / 70%);
+    padding: 3px 20px;
+    float: right;
+    height: 63px;
+    width: 202px;
+}
+header{
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+}
+nav ul a:hover, nav ul a.active{
+    box-shadow: none;
+    background-color: transparent;
+    color: #d5466c;
+    /* font-weight: 600; */
+}
+nav.nav-extended .nav-wrapper{
+    min-height: auto;
+}
+.sidenav {
+    padding-top: 20px;
+}
+nav ul a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    display: inline-block;
+}
+.hp-heading {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #bdbdbd;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+.hp-banner-sec {
+    text-align: center;
+    /* padding-top: 200px; */
+    width: 100%;
+}
+.community-form-section select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.community-form-section .custom-select select{
+    background-image: url(../images/down-arrow.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    background-size: 20px;
+}
+
+.doss-body-wrapper {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.where-hp-text {
+    font-size: 55px;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    max-width: 1090px;
+    margin: 60px auto 0;
+}
+.where-hp-text span{
+    color: #f14b72;
+    font-weight: 700;
+}
+.brown-black-btn{
+    background-image: linear-gradient(to right, #5f3a5a , #2e292e);
+    font-size: 30px;
+    line-height: 65px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter";
+    display: inline-block;
+    padding: 0 30px;
+    border-radius:22px;
+}
+.brown-btn{
+  background-color: #914d87;
+  font-size: 30px;
+  line-height: 65px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter";
+    display: inline-block;
+    padding: 0 30px;
+    border-radius:22px;
+}
+.roadmap-desc ul {
+    padding-left: 40px;
+}
+.roadmap-desc ul > li {
+    list-style-type: disc;
+    text-align: left;
+    line-height: 34px;
+    padding-left: 5px;
+}
+.doss-btn{
+    background: linear-gradient(to right, #f06879 2%, #f25986, #ffffff00 40%), repeating-linear-gradient(to bottom, #d9fbff , #7e76d4, #4c39bc 100%);
+    font-size: 24px;
+    line-height: 80px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    height: 80px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 30px;
+    min-width: 300px;
+}
+.doss-btn:hover{
+    background: linear-gradient(to left, #f06879 2%, #f25986, #ffffff00 40%), repeating-linear-gradient(to bottom, #d9fbff , #7e76d4, #4c39bc 100%);
+    color: #ffffff;
+}
+.interoperable-text {
+    font-size: 54px;
+    line-height: 64px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Inter",sans-serif;
+    padding: 30px 0;
+}
+.doss-desc {
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter",sans-serif;
+    padding-bottom: 30px;
+}
+.blockchain-grid{
+    background-color: rgba(61 61 61 / 31%);
+    height: 380px;
+    width: 360px;
+    border-radius: 25px;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    padding: 40px 40px;
+    vertical-align: top;
+}
+.blockchain-main-grid {
+    display: inline-block;
+    text-align: center;
+}
+.hp-banner-sec .banner-image img {
+    max-width: 650px;
+}
+.doss-heading{
+    font-size: 54px;
+    line-height: 64px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Inter", sans-serif;
+text-align: center;
+}
+.roadmap-section .row {
+    display: inline-block;
+    width: 100%;
+    max-width: 1565px;
+}
+.year-heading {
+    font-size: 40px;
+    line-height: 97px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+.cdp-main-grid {
+    max-width: 1565px;
+    margin: 0 auto;
+    width: 100%;
+}
+.roadmap-desc {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    line-height: 28px;
+    max-width: 370px;
+    margin: 0 auto;
+}
+.pink-bullet {
+    display: inline-block;
+    background-color: #e05a8d;
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+.cdp-grid {
+    background-color: rgba(255 255 255 / 11%);
+    height: 550px;
+    width: 28%;
+    border-radius: 25px;
+    margin: 20px;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    padding: 0px 40px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+}
+.cdp-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-bottom: 10px;
+}
+.cdp-desc {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    height: 140px;
+}
+.cdp-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    max-width: 82%;
+}
+.cdp-image{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.cdp-grid.doss-btn-section{
+    display: inline-flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.doss-desc2 {
+    font-size: 48px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+.community-form-section form .row{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1520px;
+    margin: 20px 0 50px 0!important;
+}
+.footer-heading {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+ul.footer-links li a {
+    color: #8e8e8e;
+}
+.copy-right, .copy-right a {
+    color: #676767;
+    text-align: center;
+    padding-bottom: 130px;
+}
+.footer-left-section {
+    padding: 110px 0 90px !important;
+    display: inline-block;
+    border-top: 1px solid #676767;
+}
+.dcp-section .banner-image img{
+    border-radius: 60%;
+    box-shadow: 0px 0px 240px 100px #313131;
+}
+.dcp-section {
+    padding: 50px 0 0;
+    display: inline-block;
+    width: 100%;
+}
+.interoparable-section {
+    width: 100%;
+    display: inline-block;
+    padding: 200px 0;
+}
+.interoparable-section .row{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.blockchain-main-grid{
+    background: url(../images/blockchain-gaming-bgm-image.png) no-repeat center center ;
+    height: auto; 
+}
+.blockchain-section .doss-desc {
+    padding: 0 0 50px 0;
+}
+.cdp-image img {
+    width: 100%;
+    max-width: 90%;
+    float: right;
+}
+.cdp-section{
+    background: url(../images/cdp-bg-image.png) no-repeat center center;
+    height: auto;
+    margin: 200px 0 0;
+    background-position: 100% 260px;
+    background-size: cover;
+}
+.form-section {
+    padding: 160px 0;
+    width: 100%;
+    display: inline-block;
+}
+.blockchain-section {
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+    max-width: 1565px;
+}
+.roadmap-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 335px;
+}
+.roadmap-section .doss-heading{
+    margin-bottom: 40px;
+}
+.cdp-section .interoperable-text, .form-section .interoperable-text {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.cdp-section .doss-desc{
+    padding-bottom: 100px;
+}
+.join-community-class {
+    padding: 30px 0;
+}
+.investor-image img {
+    border-radius: 50%;
+}
+form .input-field input{
+    background-color: #222222!important;
+    border-radius: 15px!important;
+    border: none!important;
+    padding: 0 15px!important;
+    width: 90% !important;
+    color: #b8b8b8!important;
+    height: 78px!important;
+    font-size: 22px!important;
+    font-family: "Inter", sans-serif;
+}
+form .input-field input:focus:not([readonly]), form input.valid[type=text]:not(.browser-default), form input.invalid:not([type]), form input.invalid:not([type]):focus, form input.valid:not([type]), form input.valid:not([type]):focus{
+    border: none!important;
+    box-shadow: none!important;
+}
+
+select {
+    background-color:#222222;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    height: 78px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    color: #b8b8b8;
+    font-size: 22px;
+}
+.setting-round{
+    /* background: url(../images/settings-round-image.png) no-repeat center top; */
+    /* background-size: cover; */
+    /* height: 469px; */
+    /* width: 469px; */
+    text-align: center;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.setting-round img.rotate{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0!important;
+    box-shadow:none!important;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/*about us css*/
+.fa-twitter-square {
+    color: #1DA1F2
+}
+.fa-linkedin {
+    color: #0077b5;
+}
+.fab::before, .far::before {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.fab, .far {
+    font-weight: 400;
+    background-color: #ffffff;
+    height: 26px;
+    width: 26px;
+    margin: 0 4px;
+    font-size: 32px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.about-us-main-section{
+    background: url(../images/aboutus/aboutus-bg-image.png) no-repeat center top;
+    background-size: cover;
+}
+.doss-banner-section.aboutus .col:last-child .banner-image {
+    text-align: center;
+}
+.doss-banner-section .row{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.doss-banner-section.aboutus {
+    padding-top: 150px;
+}
+.brain-image img{
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 130px;
+    max-width: 160px;
+}
+.brains-grid {
+    width: 315px;
+    height: 280px;
+    background-color: rgba(60 60 60 / 31%);
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 150px 30px 50px;
+    vertical-align: top;
+    padding: 0 20px;
+}
+.brains-main-grid {
+    width: 100%;
+    text-align: center;
+}
+.brain-image {
+    margin-top: -77px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.brain-name {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.brain-designation {
+    font-size: 20px;
+    line-height: 26px;
+}
+.brain-social-links{
+    padding: 10px 0;
+}
+.our-investor-section{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.doss-games2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.investor-location-ind {
+    display: inline-block;
+    align-items: center;
+    width: 33%;
+    justify-content: center;
+    vertical-align: top;
+}
+.investor-location-name {
+    font-size: 30px;
+    padding-top: 30px;
+}
+.investors-locations {
+    padding: 50px 0 80px;
+    display: inline-block;
+    width: 100%;
+}
+.investor-grid {
+    display: inline-block;
+    margin: 30px 40px;
+}
+.investors-main-grid {
+    margin: 40px auto;
+    text-align: center;
+}
+nav .sidenav-trigger{
+    margin: 0;
+}
+.investor-grid {
+    display: inline-block;
+    margin: 30px 0px;
+    width: 450px;
+    vertical-align: top;
+}
+.footer-banner-heading {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 68px;
+    width: 100%;
+    max-width: 650px;
+    display: inline-block;
+    padding-bottom: 18px;
+
+}
+.who-we-are-section .row{
+    background-color: rgba(60 60 60 / 31%);
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 540px;
+    max-width: 1210px; 
+    margin-top: 80px!important;
+}
+.footer-banner-section .row{
+    background-color: rgba(60 60 60 / 31%);
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 540px;
+    margin-top: 220px!important;
+    margin-bottom: 160px !important;
+    padding: 0 30px 0 50px!important;
+    width: 100%;
+}
+.footer-image img{
+    display: block;
+}
+.footer-image {
+    position: absolute;
+    bottom: -2px;
+}
+.footer-banner-section .container-fluid{
+    text-align: center;
+}
+.footer-banner-content {
+    text-align: left;
+    padding-left: 50px;
+}
+.who-we-are-section .container{
+    text-align: center;
+}
+.who-we-are-image {
+    position: absolute;
+    left: -100px;
+    bottom: -57px;
+}
+.wwr-desc p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    margin-bottom: 14px;
+}
+.who-we-are-section {
+    display: inline-block;
+    width: 100%;
+    margin: 80px 0;
+}
+/*about us css*/
+
+/*hiring css*/
+.hiring-main-section {
+    background: url(../images/hiring/hiring-banner-image.png) no-repeat center top;
+    background-size: cover;
+}
+.banner-heading {
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 700;
+    text-align: center;
+}
+.doss-banner-section.hiring {
+    height: 1200px;
+}
+.doss-banner-section.hiring .row {
+    height: 330px;
+}
+.your-journey-section {
+    max-width: 1670px;
+    margin: 0 auto;
+    width: 100%;
+}
+.journey-points {
+    display: inline-flex;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+}
+.journey-desc {
+    padding-left: 50px;
+}
+section {
+    padding: 0 20px;
+}
+.journey-points-section {
+    padding: 0 30px;
+}
+.lifeat-doss-section .row.my_row {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.lifeatdoss-desc p{
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 34px;
+}
+.lifeatdoss-desc {
+    width: 100%;
+    max-width: 620px;
+}
+.lifeat-doss-section {
+    width: 100%;
+    display: inline-block;
+    padding: 80px 0;
+    text-align: center;
+}
+.lifeat-doss-section .interoperable-text{
+    padding-bottom: 90px;
+}
+.photo-gallery-two {
+    display: inline-block;
+}
+.photo-gallery-section {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 50px;
+    justify-content: center;
+    max-width: 1410px;
+    padding: 40px;
+}
+.photo-gallery img {
+    display: inline-block;
+    margin: 10px;
+}
+a.open-position {
+    text-align: center;
+    display: inline-block;
+    margin: 0 20px;
+}
+.opening-positions-main {
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 55px 0;
+}
+.open-position-section {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+a.open-position {
+    text-align: center;
+    display: inline-block;
+    margin: 0 30px;
+}
+.open-position-name {
+    padding: 30px 0;
+}
+.writeus-heading {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.write-us-section {
+    padding-bottom: 100px;
+    display: inline-block;
+    width: 100%;
+}
+.your-journey-section .interoperable-text{
+    padding-bottom: 60px;
+}
+/*hiring css*/
+
+/*developer css*/
+.devoloper-main-section{
+    background: url(../images/developer/developer-bg-image.jpg) no-repeat center top;
+    background-size: cover;
+}
+.banner-text {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+}
+.doss-banner-desc {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.doss-btn.small{
+    min-width: 320px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 30px;
+}
+.doss-btn.extra-small{
+    min-width: 225px;
+    height: 75px;
+    line-height: 75px;
+}
+.decentralized-section {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 1210px;
+    height: 540px;
+    margin: 70px 0!important;
+    float: left;
+
+}
+.decent-image {
+    position: absolute;
+    left: -10px;
+    bottom: -180px;
+}
+.decent-btn {
+    font-size: 18px;
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 12px;
+    padding: 0 20px;
+    display: inline-block;
+}
+.decent-heading {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px 0;
+}
+.decent-desc {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+.weare-brecking-section {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.row.decentralized-section.decent-game{
+    float: right;
+}
+.decent-image img{
+    display: block;
+}
+.decent-game .decent-image {
+    right: 0;
+    bottom: 0px;
+    left: auto;
+    border-radius: 0 0 40px 0;
+    overflow: hidden;
+}
+.decent-content {
+    display: inline-block;
+    width: 100%;
+    max-width: 550px;
+    text-align: left;
+}
+.decentralized-main-section {
+    width: 100%;
+    display: inline-block;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.decent-game .decent-content {
+    padding-left: 50px;
+}
+.weare-brecking-section .interoperable-text {
+    padding: 150px 0 90px 0;
+}
+.how-it-work-section .interoperable-text.center{
+    padding: 150px 0 90px 0;
+}
+.hiw-steps {
+    text-align: center;
+}
+.hiw-heading {
+    font-size: 30px;
+    line-height: 86px;
+    font-weight: 700;
+}
+.hiw-img {
+    height: 170px;
+    display: inline-flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.howit-section {
+    display: inline-flex;
+    align-items: center;
+    max-width: 1500px;
+    margin:100px auto!important;
+    width: 100%;
+}
+.how-it-work-section {
+    text-align: center;
+}
+.doss-desc ul{
+    padding-left: 30px;
+}
+.doss-desc ul > li {
+    list-style-type: disc;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.footer-join-us {
+    font-size: 36px;
+    line-height: 90px;
+    margin-top: -30px;
+}
+.footer-image img {
+    width: 100%;
+}
+/*developer css*/
+
+/*players css*/
+.players-main-section {
+    background: url(../images/player/player-bg-image.jpg) no-repeat center top;
+    background-size: cover;
+}
+.doss-btn-section{
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+}
+.doss-btn-section img {
+    display: block;
+    /* margin-left: 30px; */
+}
+.doss-banner-section.player .banner-text {
+    font-size: 68px;
+    line-height: 90px;
+    font-weight: 700;
+}
+.blockchain-game-ind{
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 60px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 485px;
+    margin: 0 auto;
+}
+.blockchain-content {
+    padding: 32px 46px;
+}
+.blockchain-content .doss-btn-section a img{
+    max-width: 200px;
+    display: inline-block;
+}
+.investor-location-image {
+    border: 1px solid #2c2c2c;
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    vertical-align: top;
+    justify-content: center;
+}
+.investor-location-image img {
+    max-width: 200px;
+}
+.bgame-tag {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #2c292b;
+    display: inline-block;
+    border-radius: 10px;
+    min-width: 150px;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+}
+ul li.rm-completed{
+    list-style-image: url(../images/green-bullet.png); 
+}
+ul li.rm-inprogress{
+    list-style-image: url(../images/yellow-bullet.png);
+}
+.bgame-name {
+    font-size: 28px;
+    line-height: 55px;
+    font-weight: 700;
+}
+.bgame-desc {
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    min-height: 330px;
+}
+.bgame-token{
+    display: inline-flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.bgame-token > div{
+    padding-left: 15px;
+    font-weight: 700;
+}
+.bgame-main-grid {
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+}
+.why-dossverse-grid{
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255 255 255 / 16%);
+    border-radius: 60px;
+    height: 232px;
+    margin-top: 100px;
+    width: 100%;
+}
+.whyd-image {
+    text-align: center;
+    margin-top: -50px;
+}
+.whyd-content.row {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.whyd-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 44px;
+    padding-bottom: 10px;
+}
+.whyd-desc {
+    font-size: 18px;
+    line-height: 26px;
+}
+.whyd-content-section {
+    width: 100%;
+    max-width: 620px;
+}
+.onewallet-section {
+    padding-top: 100px;
+}
+.onewallet-image{
+    padding-top: 100px;
+}
+/*players css*/
+
+/*contact us css*/
+.contact-main-section{
+    background: url(../images/contactus/contactus-bg-image.jpg) no-repeat center top;
+    background-size: cover;
+}
+.address-ind{
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 40px;
+    width: 420px;
+    height: 460px;
+    text-align: center;
+    padding: 40px 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+}
+.address-heading {
+    font-size: 30px;
+    line-height:80px;
+    font-weight: 700;
+}
+.addresses-section {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 100px 0;
+}
+.mail-section{
+    background-color: rgba(61 61 61 / 31%);
+    border-radius: 40px;
+    width: 100%;
+    height: 260px;
+    text-align: left;
+    padding: 40px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin: 50px 0px 150px;
+    justify-content: center;
+    max-width: 948px;
+}
+.mail-content {
+    padding-left: 100px;
+}
+.mail-content .address-heading {
+    font-size: 30px;
+    line-height:40px;
+}
+/*contact us css*/
+/*terms and condition css*/
+.termscondition-section {
+    padding: 50px 0;
+}
+.termscondition-section .heading{
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: #d5466c;
+}
+.termscondition-section .sub-heading{
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: #d5466c;
+    font-size: 24px;
+    padding-top: 10px;
+}
+.termscondition-section p{
+    padding-bottom: 15px;
+}
+.termscondition-section ul li{
+list-style-type: disc;
+}
+.termscondition-section ul{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    list-style-type: disc;
+}
+/*terms and condition css*/
